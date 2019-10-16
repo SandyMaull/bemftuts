@@ -66,11 +66,11 @@
                         <a class="text-primary" href="" data-id="{{ $mhs->id }}" data-nama="{{ $mhs->nama }}" data-nim="{{ $mhs->nim }}"
                             data-prodi="{{ $mhs->prodi_id }}" data-angkatan="{{ $mhs->angkatan }}" data-email="{{ $mhs->email }}"
                             data-telp="{{ $mhs->no_telp }}" data-alamat="{{ $mhs->alamat }}" data-telegram="{{ $mhs->telegram }}"
-                            data-toggle="modal" data-target="#editModal">
+                            data-toggle="modal" data-target="#editModalMhs">
                             <i class="fas fa-user-edit"></i>
                         </a>
                         <a class="text-danger hapusfungsi" data-id="{{ $mhs->id }}" data-name="{{ $mhs->nama }}"
-                            data-toggle="modal" data-target="#deleteModal" href="">
+                            data-toggle="modal" data-target="#deleteModalMhs" href="">
                             <i class="fas fa-user-minus"></i>
                         </a>
                     </td>
@@ -85,7 +85,7 @@
 
     <form action="{{ route( 'mahasiswa.destroy' ) }}" method="POST">
         @csrf
-    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal fade" id="deleteModalMhs" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -109,7 +109,7 @@
     <form action="{{ route('mahasiswa.update') }}" method="POST">
             @csrf
             @method('PUT')
-        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal fade" id="editModalMhs" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -291,47 +291,5 @@
 
 
 @section('script')
-    <script>
-        $('#deleteModal').on('show.bs.modal', function(event) {
-
-            var button = $(event.relatedTarget)
-            var id = button.data('id')
-            var name = button.data('name')
-            var modal = $(this)
-            
-            modal.find('.modal-title').text('Delete Data '+ name + ' ?');
-            modal.find('.modal-body #deleteID').val(id);
-        })
-
-        $('#editModal').on('show.bs.modal', function(event) {
-
-            var button = $(event.relatedTarget)
-            var id = button.data('id')
-            var nama = button.data('nama')
-            var nim = button.data('nim')
-            var prodi = button.data('prodi')
-            var angkatan = button.data('angkatan')
-            var email = button.data('email')
-            var telp = button.data('telp')
-            var alamat = button.data('alamat')
-            var tele = button.data('telegram')
-            var modal = $(this)
-
-            modal.find('.modal-title').text('Edit Data '+ name);
-            modal.find('.modal-body #editID').val(id);
-            modal.find('.modal-body #recipient-name').val(nama);
-            modal.find('.modal-body #recipient-nim').val(nim);
-            modal.find('.modal-body #recipient-prodi').val(prodi);
-            modal.find('.modal-body #recipient-angkatan').val(angkatan);
-            modal.find('.modal-body #recipient-email').val(email);
-            modal.find('.modal-body #recipient-no_telp').val(telp);
-            modal.find('.modal-body #recipient-alamat').val(alamat);
-            if (tele == 1) {
-                modal.find('.modal-body #recipient-telegram').prop( "checked", true );
-            } else {
-                modal.find('.modal-body #recipient-telegram').prop( "checked", false );
-
-            }
-        })
-    </script>
+    <script src="{{asset('assets/auth/script2.js')}}"></script>
 @endsection

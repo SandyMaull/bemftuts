@@ -1,0 +1,1 @@
+toastr.warning("{{ session('warning') }}", {timeOut: 5000})

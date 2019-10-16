@@ -1,0 +1,1 @@
+toastr.error("{{ session('error') }}", {timeOut: 5000})

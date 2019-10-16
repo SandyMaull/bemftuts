@@ -40,3 +40,45 @@ $('#editModal').on('show.bs.modal', function(event) {
     modal.find('.modal-body #recipient-alamat').val(alamat);
     modal.find('.modal-body #recipient-ava').val(ava);
 })
+
+$('#deleteModalMhs').on('show.bs.modal', function(event) {
+
+    var button = $(event.relatedTarget)
+    var id = button.data('id')
+    var name = button.data('name')
+    var modal = $(this)
+    
+    modal.find('.modal-title').text('Delete Data '+ name + ' ?');
+    modal.find('.modal-body #deleteID').val(id);
+})
+
+$('#editModalMhs').on('show.bs.modal', function(event) {
+
+    var button = $(event.relatedTarget)
+    var id = button.data('id')
+    var nama = button.data('nama')
+    var nim = button.data('nim')
+    var prodi = button.data('prodi')
+    var angkatan = button.data('angkatan')
+    var email = button.data('email')
+    var telp = button.data('telp')
+    var alamat = button.data('alamat')
+    var tele = button.data('telegram')
+    var modal = $(this)
+
+    modal.find('.modal-title').text('Edit Data '+ name);
+    modal.find('.modal-body #editID').val(id);
+    modal.find('.modal-body #recipient-name').val(nama);
+    modal.find('.modal-body #recipient-nim').val(nim);
+    modal.find('.modal-body #recipient-prodi').val(prodi);
+    modal.find('.modal-body #recipient-angkatan').val(angkatan);
+    modal.find('.modal-body #recipient-email').val(email);
+    modal.find('.modal-body #recipient-no_telp').val(telp);
+    modal.find('.modal-body #recipient-alamat').val(alamat);
+    if (tele == 1) {
+        modal.find('.modal-body #recipient-telegram').prop( "checked", true );
+    } else {
+        modal.find('.modal-body #recipient-telegram').prop( "checked", false );
+
+    }
+})
