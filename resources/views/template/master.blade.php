@@ -22,7 +22,7 @@
   <link href="{{asset('admintemplate/css/sb-admin.css')}}" rel="stylesheet">
 
   <!-- Toastr Styles -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+  <link href="{{asset('assets/auth/toastr.min.css')}}" rel="stylesheet">
 
 
 </head>
@@ -108,7 +108,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{{asset('admintemplate/js/sb-admin.min.js')}}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="{{asset('assets/auth/toastr.min.js')}}"></script>
 
   <!-- Demo scripts for this page-->
   <script src="{{asset('admintemplate/js/demo/datatables-demo.js')}}"></script>
