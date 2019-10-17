@@ -24,6 +24,7 @@
                 <hr class="light">
                 <p><a href="https://uts.ac.id/">Universitas Teknologi Sumbawa Website</a></p>
                 <p><a href="https://kuronekosan.web.id">Kuroneko</a></p>
+		<p><a href="https://laravel.com">Laravel Framework</a></p>
             </div>
             <div class="col-12">
                 <hr class="light-100">
