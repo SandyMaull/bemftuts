@@ -15,9 +15,15 @@ class MahasiswaController extends Controller
             $data_mahasiswa = Mahasiswa::all();
             $latest = Mahasiswa::where('updated_at', Mahasiswa::max('updated_at'))->orderBy('id','desc')->first();
             // dd($latest);
-            $update = $latest->updated_at;
-            $updateby = $latest->user->name;
-            $jbt = $latest->user->bidang->bidang;
+            if ($latest === null) {
+                $update = "NULL";
+                $updateby = "NULL";
+                $jbt = "NULL";
+            } else {
+                $update = $latest->updated_at;
+                $updateby = $latest->user->name;
+                $jbt = $latest->user->bidang->bidang;
+            }
 
         }
         return view( 'mahasiswa.index',['data_mahasiswa' => $data_mahasiswa, 'updated' => $update, 'updated_by' => $updateby, 'jbt' => $jbt] );

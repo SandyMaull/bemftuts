@@ -254,8 +254,13 @@ class AdminController extends Controller
     {
         $users = User::all();
         $latest = User::where('updated_at', User::max('updated_at'))->orderBy('id','desc')->first();
-        $update = $latest->updated_at;
-        $updateby = $latest->created_by;
+        if ($latest === null) {
+            $update = "NULL";
+            $updateby = "NULL";
+        } else {
+            $update = $latest->updated_at;
+            $updateby = $latest->created_by;
+        }
         return view('admin.pengurus',['users' => $users, 'updated' => $update, 'updated_by' => $updateby]);
     }
     public function create(Request $request)
