@@ -57,7 +57,7 @@
             <span>
                 <p class="copyright">
                     &copy; 2019
-                    <a href="https://www.themeineed.com" target="_blank">Badan Eksekutif Mahasiswa Fakultas Teknik Universitas Teknologi Sumbawa</a>. All Rights Reserved.
+                    <a href="https://www.bemftuts.my.id" target="_blank">Badan Eksekutif Mahasiswa Fakultas Teknik Universitas Teknologi Sumbawa</a>. All Rights Reserved.
                 </p>
             </span>
           </div>
