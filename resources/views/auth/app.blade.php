@@ -15,12 +15,12 @@
     @yield('body')
     @include('template.pages_temp.footer')
 
-    <script src="{{asset('assets/auth/all.js')}}"></script>
-    <script src="{{asset('assets/auth/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/auth/popper.min.js')}}"></script>
-    <script src="{{asset('assets/auth/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/auth/toastr.min.js')}}"></script>
-    <script src="{{asset('assets/auth/script.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/all.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/jquery.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/popper.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/bootstrap.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/toastr.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/script.js')}}"></script>
 
     
     @yield('script')

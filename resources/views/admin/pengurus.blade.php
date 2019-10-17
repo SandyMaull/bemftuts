@@ -356,5 +356,5 @@
 
 
 @section('script')
-    <script src="{{asset('assets/auth/script2.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/script2.js')}}"></script>
 @endsection
