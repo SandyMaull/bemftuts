@@ -95,23 +95,23 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script nonce="5r1pt5" src="{{asset('admintemplate/vendor/jquery/jquery.min.js')}}"></script>
-  <script nonce="5r1pt5" src="{{asset('admintemplate/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/vendor/jquery/jquery.min.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Core plugin JavaScript-->
-  <script nonce="5r1pt5" src="{{asset('admintemplate/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
   <!-- Page level plugin JavaScript-->
-  <script nonce="5r1pt5" src="{{asset('admintemplate/vendor/chart.js/Chart.min.js')}}"></script>
-  <script nonce="5r1pt5" src="{{asset('admintemplate/vendor/datatables/jquery.dataTables.js')}}"></script>
-  <script nonce="5r1pt5" src="{{asset('admintemplate/vendor/datatables/dataTables.bootstrap4.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/vendor/chart.js/Chart.min.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/vendor/datatables/jquery.dataTables.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/vendor/datatables/dataTables.bootstrap4.js')}}"></script>
 
   <!-- Custom scripts for all pages-->
-  <script nonce="5r1pt5" src="{{asset('admintemplate/js/sb-admin.min.js')}}"></script>
-  <script nonce="5r1pt5" src="{{asset('assets/auth/toastr.min.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/js/sb-admin.min.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/toastr.min.js')}}"></script>
 
   <!-- Demo scripts for this page-->
-  <script nonce="5r1pt5" src="{{asset('admintemplate/js/demo/datatables-demo.js')}}"></script>
+  <script nonce="4LLScR1pT1H4V3" src="{{asset('admintemplate/js/demo/datatables-demo.js')}}"></script>
   {{-- <script src="{{asset('admintemplate/js/demo/chart-area-demo.js')}}"></script> --}}
 
     @include('template.message')

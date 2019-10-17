@@ -10,7 +10,7 @@
     <link href="{{ asset('assets/style.css') }}" rel="stylesheet">
     <link href="{{asset('assets/auth/toastr.min.css')}}" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/bem.png') }}" sizes="16x16">
-    <style>
+    <style nonce="4LLScR1pT1H4V3">
         .owl-prev {
             left: -30px;
         }
@@ -86,14 +86,14 @@
     </div>
     </form>
     
-    <script nonce="5r1pt5" src="{{asset('assets/auth/all.js')}}"></script>
-    <script nonce="5r1pt5" src="{{asset('assets/auth/jquery.min.js')}}"></script>
-    <script nonce="5r1pt5" src="{{asset('assets/auth/popper.min.js')}}"></script>
-    <script nonce="5r1pt5" src="{{asset('assets/auth/bootstrap.min.js')}}"></script>
-    <script nonce="5r1pt5" src="{{asset('assets/auth/toastr.min.js')}}"></script>
-    <script nonce="5r1pt5" src="{{url('/assets/owl.carousel.min.js')}}"></script>
-    <script nonce="5r1pt5" src="{{url('/assets/jquery.mousewheel.min.js')}}"></script>
-    <script nonce="5r1pt5" src="{{asset('assets/auth/script.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/all.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/jquery.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/popper.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/bootstrap.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/toastr.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{url('/assets/owl.carousel.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{url('/assets/jquery.mousewheel.min.js')}}"></script>
+    <script nonce="4LLScR1pT1H4V3" src="{{asset('assets/auth/script.js')}}"></script>
 
 
     @include('template.message')
