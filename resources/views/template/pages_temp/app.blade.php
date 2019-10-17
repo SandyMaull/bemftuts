@@ -86,14 +86,14 @@
     </div>
     </form>
     
-    <script src="{{asset('assets/auth/all.js')}}"></script>
-    <script src="{{asset('assets/auth/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/auth/popper.min.js')}}"></script>
-    <script src="{{asset('assets/auth/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/auth/toastr.min.js')}}"></script>
-    <script src="{{url('/assets/owl.carousel.min.js')}}"></script>
-    <script src="{{url('/assets/jquery.mousewheel.min.js')}}"></script>
-    <script src="{{asset('assets/auth/script.js')}}"></script>
+    <script nonce="5r1pt5" src="{{asset('assets/auth/all.js')}}"></script>
+    <script nonce="5r1pt5" src="{{asset('assets/auth/jquery.min.js')}}"></script>
+    <script nonce="5r1pt5" src="{{asset('assets/auth/popper.min.js')}}"></script>
+    <script nonce="5r1pt5" src="{{asset('assets/auth/bootstrap.min.js')}}"></script>
+    <script nonce="5r1pt5" src="{{asset('assets/auth/toastr.min.js')}}"></script>
+    <script nonce="5r1pt5" src="{{url('/assets/owl.carousel.min.js')}}"></script>
+    <script nonce="5r1pt5" src="{{url('/assets/jquery.mousewheel.min.js')}}"></script>
+    <script nonce="5r1pt5" src="{{asset('assets/auth/script.js')}}"></script>
 
 
     @include('template.message')
