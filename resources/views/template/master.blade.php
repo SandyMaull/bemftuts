@@ -13,16 +13,16 @@
   <title>BEM FT UTS - @yield('title')</title>
 
   <!-- Custom fonts for this template-->
-  <link href="{{asset('admintemplate/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link nonce="4LLScR1pT1H4V3" href="{{asset('admintemplate/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
 
   <!-- Page level plugin CSS-->
-  <link href="{{asset('admintemplate/vendor/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
+  <link nonce="4LLScR1pT1H4V3" href="{{asset('admintemplate/vendor/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="{{asset('admintemplate/css/sb-admin.css')}}" rel="stylesheet">
+  <link nonce="4LLScR1pT1H4V3" href="{{asset('admintemplate/css/sb-admin.css')}}" rel="stylesheet">
 
   <!-- Toastr Styles -->
-  <link href="{{asset('assets/auth/toastr.min.css')}}" rel="stylesheet">
+  <link nonce="4LLScR1pT1H4V3" href="{{asset('assets/auth/toastr.min.css')}}" rel="stylesheet">
 
 
 </head>

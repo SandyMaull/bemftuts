@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BEM FT UTS - @yield('title')</title>
-    <link rel="stylesheet" href="{{asset('assets/auth/bootstrap.min.css')}}">
-    <link href="{{url('/assets/owl.carousel.min.css')}}" rel="stylesheet"/>
-    <link href="{{url('/assets/owl.theme.default.min.css')}}" rel="stylesheet"/>
-    <link href="{{ asset('assets/style.css') }}" rel="stylesheet">
-    <link href="{{asset('assets/auth/toastr.min.css')}}" rel="stylesheet">
+    <link nonce="4LLScR1pT1H4V3" rel="stylesheet" href="{{asset('assets/auth/bootstrap.min.css')}}">
+    <link nonce="4LLScR1pT1H4V3" href="{{url('/assets/owl.carousel.min.css')}}" rel="stylesheet"/>
+    <link nonce="4LLScR1pT1H4V3" href="{{url('/assets/owl.theme.default.min.css')}}" rel="stylesheet"/>
+    <link nonce="4LLScR1pT1H4V3" href="{{ asset('assets/style.css') }}" rel="stylesheet">
+    <link nonce="4LLScR1pT1H4V3" href="{{asset('assets/auth/toastr.min.css')}}" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/bem.png') }}" sizes="16x16">
     <style nonce="4LLScR1pT1H4V3">
         .owl-prev {
