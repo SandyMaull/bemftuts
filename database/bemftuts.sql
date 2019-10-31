@@ -29,7 +29,7 @@ CREATE TABLE `aspirasi` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `aspirasi` (
 
 LOCK TABLES `aspirasi` WRITE;
 /*!40000 ALTER TABLE `aspirasi` DISABLE KEYS */;
-INSERT INTO `aspirasi` VALUES (1,'Lenga Offcial','Bagus!','2019-10-03 20:18:50','2019-10-03 20:18:50'),(2,'Lenga Offcial','Bagus!2','2019-10-03 20:19:22','2019-10-03 20:19:22'),(3,'Trisman Sanjaya','Test Kotak Aspirasi','2019-10-04 09:21:32','2019-10-04 09:21:32'),(4,'Lala','Anda','2019-10-04 09:28:55','2019-10-04 09:28:55'),(5,'Sandy Maulana','EEK','2019-10-04 09:31:32','2019-10-04 09:31:32'),(6,'Sandy Maulana','SS','2019-10-04 09:34:17','2019-10-04 09:34:17'),(7,'Trisman Sanjaya','A','2019-10-04 09:46:31','2019-10-04 09:46:31'),(8,'Andi Maslahah','aaa','2019-10-04 09:52:43','2019-10-04 09:52:43'),(9,'sdfgh','sdfgh','2019-10-04 10:16:49','2019-10-04 10:16:49'),(10,'Yasser','lala','2019-10-04 10:37:50','2019-10-04 10:37:50'),(11,'Trisman Sanjaya','asa','2019-10-13 14:00:50','2019-10-13 14:00:50'),(12,'Test Kotak Aspirasi 17 Oct 2019','Test terbaru','2019-10-17 13:21:17','2019-10-17 13:21:17');
+INSERT INTO `aspirasi` VALUES (1,'Lenga Offcial','Bagus!','2019-10-03 20:18:50','2019-10-03 20:18:50'),(2,'Lenga Offcial','Bagus!2','2019-10-03 20:19:22','2019-10-03 20:19:22'),(3,'Trisman Sanjaya','Test Kotak Aspirasi','2019-10-04 09:21:32','2019-10-04 09:21:32'),(4,'Lala','Anda','2019-10-04 09:28:55','2019-10-04 09:28:55'),(5,'Sandy Maulana','EEK','2019-10-04 09:31:32','2019-10-04 09:31:32'),(6,'Sandy Maulana','SS','2019-10-04 09:34:17','2019-10-04 09:34:17'),(7,'Trisman Sanjaya','A','2019-10-04 09:46:31','2019-10-04 09:46:31'),(8,'Andi Maslahah','aaa','2019-10-04 09:52:43','2019-10-04 09:52:43'),(9,'sdfgh','sdfgh','2019-10-04 10:16:49','2019-10-04 10:16:49'),(10,'Yasser','lala','2019-10-04 10:37:50','2019-10-04 10:37:50'),(11,'Trisman Sanjaya','asa','2019-10-13 14:00:50','2019-10-13 14:00:50'),(12,'Test Kotak Aspirasi 17 Oct 2019','Test terbaru','2019-10-17 13:21:17','2019-10-17 13:21:17'),(13,'Andi Maslahahaaa','Lollll!','2019-10-17 14:40:15','2019-10-17 14:40:15'),(14,'Ujank','Test Aspirasi','2019-10-22 02:10:50','2019-10-22 02:10:50'),(15,'Lala','Test Aspirasi Ke2','2019-10-22 02:11:36','2019-10-22 02:11:36'),(16,'Nurul MS','Pengurus BEM-FT kayanya lagi pada down nihh ? What\'s on ?','2019-10-29 13:12:20','2019-10-29 13:12:20');
 /*!40000 ALTER TABLE `aspirasi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -150,7 +150,7 @@ CREATE TABLE `posts` (
   KEY `posts_bidang_id_foreign` (`bidang_id`),
   CONSTRAINT `posts_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `posts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -159,7 +159,7 @@ CREATE TABLE `posts` (
 
 LOCK TABLES `posts` WRITE;
 /*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (1,'Post 1 BPH','Post 1 BPH Edited 3','1571157668_5da5f6a47f1f1_IMG_0084.JPG',1,9,'2019-10-12 02:33:04','2019-10-17 12:53:28'),(2,'Post 1 Internal','Post 1 Internal Edited','1571163627_5da60deb4c1b3_IMG_20191016_020102.jpg',11,8,'2019-10-12 02:33:40','2019-10-16 06:20:29'),(3,'Post 1 Relasi','Post 1 Relasi','1570974013_5da3293d78246_IMG_0053.JPG',1,10,'2019-10-13 13:40:16','2019-10-13 13:40:16'),(5,'Post 1 Medinfo','Post 1 Medinfo','1570974262_5da32a360a73f_IMG_9856.JPG',1,1,'2019-10-13 13:44:25','2019-10-13 13:44:25'),(6,'Post 1 Ekraf','Post 1 Ekraf','1570975093_5da32d75b7808_IMG_9886.JPG',1,12,'2019-10-13 13:58:15','2019-10-13 13:58:15'),(8,'Post 2 Internal','Post 2 Internal','1570975132_5da32d9ce96dd_IMG_9799.JPG',1,8,'2019-10-13 13:58:55','2019-10-13 13:58:55'),(9,'Post 2 Relasi','Post 2 Relasi','1570975157_5da32db5e533e_IMG_9974.JPG',1,10,'2019-10-13 13:59:19','2019-10-13 13:59:19'),(10,'Post 2 Sospol','Post 2 Sospol','1570975179_5da32dcb97ab3_IMG_9988.JPG',1,11,'2019-10-13 13:59:42','2019-10-13 13:59:42'),(11,'Post 2 Medinfo','Post 2 Medinfo','1570975201_5da32de1a3124_IMG_9815.JPG',1,1,'2019-10-13 14:00:04','2019-10-13 14:00:04'),(12,'Post 2 Ekraf','Post 2 Ekraf','1570975223_5da32df7d89e5_IMG_0060.JPG',1,12,'2019-10-13 14:00:25','2019-10-13 14:00:25'),(13,'What is Lorem Ipsum?','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','1571255267_5da773e3da0e7_IMG_9978.JPG',1,9,'2019-10-17 07:47:48','2019-10-17 07:56:49'),(14,'Post 2 BPH','Post 2 BPH','1571273005_5da7b92dea3ce_IMG_9880.JPG',1,9,'2019-10-17 12:43:27','2019-10-17 12:43:27');
+INSERT INTO `posts` VALUES (13,'What is Lorem Ipsum?','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','1571255267_5da773e3da0e7_IMG_9978.JPG',1,9,'2019-10-17 07:47:48','2019-10-17 07:56:49'),(15,'malam santuy pengurus BEM FT 2019','Hari ini 26 Oktober 2019 melakukan upgreding untuk memberikan semangat  kembali para pengurus BEM FT dalam menjalankan segala macam program kerja yang telah dilaksanakan','1572077919_5db4015f7df7f_15720778854861110863379.jpg',1,9,'2019-10-26 20:18:40','2019-10-26 20:18:40');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,4 +267,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-17  9:59:57
+-- Dump completed on 2019-10-31 17:19:47

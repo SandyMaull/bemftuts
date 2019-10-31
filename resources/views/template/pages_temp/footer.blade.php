@@ -6,7 +6,7 @@
                 <img src="{{ asset('assets/img/bem.png') }}" style="height:50px;"> <span style="margin-left:1.5rem;font-size:1.3em;">BEM FT UTS</span>
                 <hr class="light">
                 <p>0822 6087 9023</p>
-                <p><a href="mailto:admin@bemftuts.ac.id">admin@bemftuts.ac.id</a></p>
+                <p><a href="mailto:kuro@bemftuts.ac.id">admin@bemftuts.ac.id</a></p>
                 <p><a href="https://www.google.com/maps/uv?hl=id&pb=!1s0x2dcb932df2d305f1:0x971406aa67c71c2d!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipMGJvA3MO_89c55PqAuNhP1dTYHgC76f3-ccIMd%3Dw213-h160-k-no!5sUniversitas+Teknologi+Sumbawa+-+Penelusuran+Google&imagekey=!1e10!2sAF1QipMGJvA3MO_89c55PqAuNhP1dTYHgC76f3-ccIMd&sa=X&ved=2ahUKEwjEsaX0gbLkAhXn7nMBHQvIDEEQoiowF3oECAwQBg">
                     Jl. Raya Olat Maras, Batu Alang, Moyo Hulu, Pernek, Moyohulu, Kabupaten Sumbawa</p>
                 <p>Nusa Tenggara Bar. 84371</p></a>
