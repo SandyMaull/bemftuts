@@ -32,7 +32,7 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Title</th>
+                        <th>Nama</th>
                         <th>Pesan</th>
                         {{-- <th>Dibuat pada</th>
                         <th>Diedit pada</th> --}}
@@ -42,7 +42,7 @@
                 <tfoot>
                     <tr>
                         <th>#</th>
-                        <th>Title</th>
+                        <th>Nama</th>
                         <th>Pesan</th>
                         {{-- <th>Dibuat pada</th>
                         <th>Diedit pada</th> --}}

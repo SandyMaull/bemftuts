@@ -1,0 +1,18 @@
+mysqldump started at 17-11-2019 04:31:08
+mysqldump finished at 17-11-2019 04:31:08
+file permission changed
+old files deleted
+operation finished at 17-11-2019 04:31:08
+*****************
+mysqldump started at 17-11-2019 04:32:30
+mysqldump finished at 17-11-2019 04:32:30
+file permission changed
+old files deleted
+operation finished at 17-11-2019 04:32:30
+*****************
+mysqldump started at 17-11-2019 04:35:35
+mysqldump finished at 17-11-2019 04:35:35
+file permission changed
+old files deleted
+operation finished at 17-11-2019 04:35:35
+*****************

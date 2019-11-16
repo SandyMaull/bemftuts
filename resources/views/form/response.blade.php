@@ -33,7 +33,7 @@
             Data Form {{ $bidang }} 
             <div class="float-right">
                 <a href="{{url('/admin'.'/'.$bidang.'/Form'.'/'.$form->id.'/export')}}">
-                    <i class="fas fa-user-plus"></i>
+                    <i class="fas fa-file-export"></i>
                     <span>Export Form</span>
                 </a>
             </div>
