@@ -7,6 +7,7 @@ use App\Mahasiswa;
 use App\Post;
 use App\Aspirasi;
 use App\Bidang;
+use App\Form;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Carbon;
 use Intervention\Image\Facades\Image;
@@ -21,8 +22,11 @@ class AdminController extends Controller
         $users = User::all();
         $total_mhs = Mahasiswa::all()->count();
         $total_pngrs = $users->count();
+        $total_post = Post::all();
+        $total_form = Form::all();
         
-        return view('admin.index' ,['users' => $users , 'totalmhs' => $total_mhs , 'totalpng' => $total_pngrs]);
+        return view('admin.index' ,['users' => $users , 'totalmhs' => $total_mhs , 'totalpng' => $total_pngrs,
+         'totalpost' => $total_post, 'totalform' => $total_form]);
     }
     public function bidangindex($bidang){
         if($bidang == 'BPH'){
@@ -118,7 +122,7 @@ class AdminController extends Controller
     }
     public function aspirasiindex()
     {
-        $aspir = Aspirasi::all();
+        $aspir = Aspirasi::all()->sortByDesc('id');
         return view('admin.aspirasi',['aspirasi'=> $aspir]);
     }
     public function bidangtambah(Request $request,$bidang){

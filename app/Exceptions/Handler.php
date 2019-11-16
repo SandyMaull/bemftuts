@@ -49,10 +49,17 @@ class Handler extends ExceptionHandler
         if ($this->isHttpException($exception)) {
             if ($exception->getStatusCode() == 404) {
                 // abort(404,'Get Rekt');
-                return response()->view('errors.index',[], $exception->getStatusCode());
+                // dd($exception->getStatusCode());
+                return response()->view('errors.index',['error' => strval($exception->getStatusCode())], $exception->getStatusCode(),[]);
                 return response()->json(['error' => 'Not Found'], $exception->getStatusCode());
                 // dd($errorcode);
             }
+        }
+        if(get_class($exception) == "Illuminate\Database\Eloquent\ModelNotFoundException") {
+            // return (new Response('Model not found', 400));
+            // $exception->getStatusCode();
+            return response()->view('errors.index',['error' => strval(404)],404,[]);
+
         }
         return parent::render($request, $exception);
     }

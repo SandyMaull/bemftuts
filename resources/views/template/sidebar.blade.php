@@ -14,6 +14,25 @@
         <h6 class="dropdown-header">Pages</h6>
         <a class="dropdown-item" href="{{url('/')}}">Home</a>
         <a class="dropdown-item" href="{{url('/login')}}">Login</a>
+        @if (auth()->user()->bidang->bidang == 'BPH')
+            <a class="dropdown-item" href="{{url('/admin/BPH/Form')}}">Form</a>
+        @endif
+        @if (auth()->user()->bidang->bidang == 'Internal')
+            <a class="dropdown-item" href="{{url('/admin/Internal/Form')}}">Form</a>
+        @endif
+        @if (auth()->user()->bidang->bidang == 'Relasi')
+            <a class="dropdown-item" href="{{url('/admin/Relasi/Form')}}">Form</a>
+        @endif
+        @if (auth()->user()->bidang->bidang == 'Sospol')
+            <a class="dropdown-item" href="{{url('/admin/Sospol/Form')}}">Form</a>
+        @endif
+        @if (auth()->user()->bidang->bidang == 'MEDINFO')
+            <a class="dropdown-item" href="{{url('/admin/MEDINFO/Form')}}">Form</a>
+        @endif
+        @if (auth()->user()->bidang->bidang == 'Ekraf')
+            <a class="dropdown-item" href="{{url('/admin/Ekraf/Form')}}">Form</a>
+        @endif
+
         <div class="dropdown-divider"></div>
         @if (auth()->user()->bidang->bidang == 'BPH' || auth()->user()->role->roles == 'superadmin' || auth()->user()->id == 11)
             <a class="dropdown-item" href="{{url('/admin/BPH')}}">BPH</a>

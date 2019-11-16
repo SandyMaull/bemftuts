@@ -4,8 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Crypt;
 use App\Post;
+use App\User;
 use App\Aspirasi;
+use App\Mail;
 
 class PagesController extends Controller
 {
@@ -77,5 +81,48 @@ class PagesController extends Controller
         return view('pages.galeri.index',['posts' => $posts]);
     }
 
+    public function regispengurusindex()
+    {
+        return view('validasi');
+    }
+    public function regispengurusshow(Request $request)
+    {
+        // return view('regis');
+        // dd($request->all());
+        if ($request->password == "Totalitas_Bersinergi" || $request->password == "totalitas_bersinergi" || 
+        $request->password == "TOTALITAS_BERSINERGI"){
+            return view('regis');
+        } else {
+            return redirect()->back()->with('error','Kode Validasi Salah, Check Kembali Kode!');
+        }
+    }
+    public function regispengurusstore(Request $request)
+    {
+        // dd($request->all());
+        $users = new User;
+        $users->bidang_id = $request->bidang;
+        $users->prodi_id = $request->prodi;
+        $users->role_id = $request->role;
+        $users->name = $request->name;
+        $users->nim = $request->nim;
+        $users->email = $request->email;
+        $users->password = Hash::make($request->password, [
+            'rounds' => 12
+        ]);
+        $users->angkatan = $request->angkatan;
+        $users->no_telp = $request->notelp;
+        $users->alamat = $request->alamat;
+        if($request->avatar === null) {
+            $avatar = null;
+        } else {
+            $avatar = $request->avatar;
+        }
+        $users->avatar = $avatar;
+        $users->created_by = $request->created_by;
+
+        // dd($users);
+        $users->save();
+        return redirect('/login')->with('success','User Berhasil Ditambahkan!, Silahkan Login');
+    }
     // End of Pages Controller
 }
