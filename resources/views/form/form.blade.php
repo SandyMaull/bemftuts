@@ -25,7 +25,7 @@
                         <label for="Input_{{$looping}}">{{$field}}</label>
                         <input type="hidden" id="nama_form" name="nama_form" class="form-control" value="key_jawaban_{{ preg_replace(' /[ -]+/ ', '_', $form->nama_form) }}_">
                         <input type="text" class="form-control" id="Input_{{$looping}}" aria-describedby="Help_{{$looping}}"
-                        name="key_jawaban_{{ preg_replace(' /[ -]+/ ', '_', $form->nama_form) }}_{{$looping}}" placeholder="Masukan {{$field}} Anda" required>
+                        name="key_jawaban_{{ preg_replace(' /[ -]+/ ', '_', $form->nama_form) }}_{{$looping}}" placeholder="{{$field}}" required>
                         <small id="Help_{{$looping}}" class="form-text text-muted">Contoh Penginputan: {{ $form_field['contoh_jawaban'][$looping] }}</small>
                     </div>
                     @php

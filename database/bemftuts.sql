@@ -1,112 +1,165 @@
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
+-- MySQL dump 10.16  Distrib 10.1.41-MariaDB, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 16, 2019 at 01:06 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
+-- Host: localhost    Database: bemftuts
+-- ------------------------------------------------------
+-- Server version	10.1.41-MariaDB-0+deb9u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `dummy_bem`
---
-
--- --------------------------------------------------------
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
 -- Table structure for table `aspirasi`
 --
 
+DROP TABLE IF EXISTS `aspirasi`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `aspirasi` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nama` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `aspirasi` varchar(3000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `aspirasi`
+--
+
+LOCK TABLES `aspirasi` WRITE;
+/*!40000 ALTER TABLE `aspirasi` DISABLE KEYS */;
+INSERT INTO `aspirasi` VALUES (1,'Sandy Maulana','Test Kotak Aspirasi','2019-11-17 09:04:40','2019-11-17 09:04:40'),(2,'Andi Maslahah','Test Kotak Aspirasi 2 LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL','2019-11-17 09:05:09','2019-11-17 09:05:09'),(3,'Dzal Aidi Al-Ayyubi','Semoga tetap semangat di akhir\" kepengurusan ini','2019-11-25 00:28:33','2019-11-25 00:28:33'),(4,'No Name','Kembalikan Metalurgi Bersama dengan Saudara\"nya lagi','2019-11-25 01:00:37','2019-11-25 01:00:37'),(5,'Akbar Algifari','Menuju tak terbatas Dan melapauinya','2019-11-25 01:19:47','2019-11-25 01:19:47'),(6,'Brenny prasetyo waty','Totalitas bersinergi','2019-12-04 17:37:00','2019-12-04 17:37:00'),(7,'Rere','Totalitas bersinergi','2019-12-04 18:13:22','2019-12-04 18:13:22'),(8,'Dany Angga Saputra','Adakan meja tenis meja beserta perlengkapan tersebut. Dikarenakan belum ada di teknik','2019-12-10 08:44:10','2019-12-10 08:44:10'),(9,'RIDAYANI','Tindakan yang perlu diperhatikan antara lain aspirasi mahasiswa terhadapak kebijakan kampus yang sampai saat ini saya pribadi belum mendapatkan almamater dan juga kartu mahasiswa yang tidak jelas kapan di berikan','2019-12-10 08:45:23','2019-12-10 08:45:23'),(10,'Yoga Oxa Wahyu Pratama','Tolong jalan di kearah Dikti di perbaiki. Dan kartu tanda mahasiswa fakultas teknik','2019-12-10 08:46:24','2019-12-10 08:46:24'),(11,'Reza','Tolong dong agar bisa dikonsultasikan wilayah parkir dekat lab kimia aja, dan tolong di lab komputer ditambah lagi kipas anginnya','2019-12-10 09:03:11','2019-12-10 09:03:11'),(12,'Reza','Tolong dong agar bisa dikonsultasikan wilayah parkir dekat lab kimia aja, dan tolong di lab komputer ditambah lagi kipas anginnya','2019-12-10 09:03:13','2019-12-10 09:03:13'),(13,'Novi aswatun hasanah','Tidak ada','2019-12-10 09:09:36','2019-12-10 09:09:36'),(14,'Eva pebrianti','Semoga BEM FT lebih maju lagi lebih baik dari hari ini dan semoga BEM lebih memerhatikan masyarakatnya yang bukan dari prodinya sndiri dan semoga BEM juga memerhatikan fasilitas di wilayah FT','2019-12-10 09:19:54','2019-12-10 09:19:54'),(15,'Wahyu Eka Taparana','Assalamualaikum\r\nTerima kasih kepada pihak BEM FT yang telah membuat saya menjadi kuat Mental dan siap dalam keadaan apa pun, A+ buat pihak BEM FT\r\nWassalamu\'alaikum 😊','2019-12-10 10:09:06','2019-12-10 10:09:06'),(16,'Wahyu Eka Taparana','Assalamualaikum\r\nTerima kasih kepada pihak BEM FT yang telah berhasil menguatkan mental saya dan membuat saya selalu siap dalam keadaan apa pun.\r\nWassalamu\'alaikum','2019-12-10 10:19:28','2019-12-10 10:19:28'),(17,'Tara rizkayanti','Semoga kedepan nya fakultas teknik tetap menerapkan solidaritas, kekeluargaan, senioritas','2019-12-10 10:55:50','2019-12-10 10:55:50'),(18,'Sri wahyuni','Kembangkan FT lagi','2019-12-11 00:09:27','2019-12-11 00:09:27'),(19,'Seli marselina','Lebih aktif lagi dalam mengelola BEM','2019-12-11 00:22:10','2019-12-11 00:22:10'),(20,'Uzlifatul Jannah Hamid','Salah satu pengerdilan terbesar dalam hidup adalah membiarkan pemikiran yang cemerlang menjadi budak bagi tubuh yang malas, yang mendahulukan istirahat sebelum lelah.','2019-12-11 00:34:43','2019-12-11 00:34:43'),(21,'WAHYU EKA TAPARANA','Terima kasih kepada pihak BEM yang telah membimbing saya agar menjadi lebih percaya diri di Fakultas Teknik tercinta ini','2019-12-14 00:40:50','2019-12-14 00:40:50'),(22,'Bayu Anggoro wibisono','Selalu semangat ciptakan generasi  bertalenta karena pemimpin tidak bisa di plagiat.','2019-12-16 08:25:27','2019-12-16 08:25:27'),(23,'Maulana Helmi Akbar','Menjadikan BEM FT sebagai wadah penampung dan penyalur aspirasi mahasiswa teknik.','2019-12-16 08:48:16','2019-12-16 08:48:16'),(24,'Seli marselina','Agar lebih aktif lagi','2019-12-16 08:50:30','2019-12-16 08:50:30'),(25,'Nursia','Loyalitas..','2019-12-16 08:58:29','2019-12-16 08:58:29'),(26,'Pupung','Aspirasi dari masyarakat Kelarin masalah gedung, dan KTM. Mungkin itu dulu. Sisanya mungkin nyusul. Semangat!','2019-12-16 09:06:33','2019-12-16 09:06:33'),(27,'Ariansyah','Semoga lebih bermanfaat untuk kedepannya dan menuju masa depan yang lebih cemerlang','2019-12-16 09:20:28','2019-12-16 09:20:28'),(28,'Ariansyah','Semoga bermanfaat untuk kedepannya dan menuju ke masa depan yang lebih cemerlang','2019-12-16 09:22:22','2019-12-16 09:22:22'),(29,'Nita surahmi','Semoga menbuat fakultas teknik uts makin maju dan haha salam satu jiwat','2019-12-16 09:52:50','2019-12-16 09:52:50'),(30,'Akbar Algifari','No coment','2019-12-16 09:57:11','2019-12-16 09:57:11'),(31,'<div><center> <h1>ASU</h1></center></div>','<div><center> <h1>ASU</h1></center></div>','2019-12-16 09:59:23','2019-12-16 09:59:23'),(32,'Ikhda Qurrata Aini','Saya berharap agar mahasiswa tidak berbeasiswa agar dibantu untuk mendapatkan beasiswa. Soalnya kuliah mahal:\'v apalagi uang kos:) belum lagi keuangan sehari-hari:) di khususkan banget deh buat mahasiswa reguler yang berprestasi. Sayang banget punya prestasi tapi ga dapet beasiswa.','2019-12-16 10:01:07','2019-12-16 10:01:07'),(33,'Arif fahmi','lebih tegas di harapkan agar mempperhatikan lagi mahasiswa teknik agar lebih aktif dan saya sangat beerkesan dengan kerja kerasnya','2019-12-16 10:02:53','2019-12-16 10:02:53'),(34,'Abdullah Azzam','Semangat untuk BEM FT!!!\r\nAspirasi saya yaitu :\r\nTolong pastikan kelas untuk program studi Metalurgi!!!  Apa harus terpisah? Apa harus bertolak belakang dengan semboyan kita? \r\n#Teknik_Satu!!!!\r\n\r\n\r\n\r\n#Bergeraklah!!! Karena itu tandanya kita hidup','2019-12-16 10:04:28','2019-12-16 10:04:28'),(35,'Nurmi Santi','Teruslah berjuang walaupun dalam tekanan sebesar apapun,jangan pernah mengeluh dalam melakukan segala hal.','2019-12-16 10:05:44','2019-12-16 10:05:44'),(36,'Eka etiana','Bisa lebih baik lagi untuk kedepannya, dan untuk para pengurus BEM, saran jangan jadi mahasiswa yang berfikir bahwa kalian paling baik di teknik, dan jangan menjadi sombong karena jabatan Klian. Kedepannya lebih baik dan kreatif yah','2019-12-16 10:22:12','2019-12-16 10:22:12'),(37,'Ridho Rabbani','Mana kartu Tanda Mahasiswa','2019-12-16 10:34:26','2019-12-16 10:34:26'),(38,'Temannya young lex','Tolong dong urus KTM biar cepat kelar, sama kipas angin kelas di adakan','2019-12-16 10:39:52','2019-12-16 10:39:52'),(39,'Ajie prana mesa','Sukses selalu','2019-12-16 11:05:17','2019-12-16 11:05:17'),(40,'Junianto saputra','Semoga BEM FT makin jaya','2019-12-16 11:16:14','2019-12-16 11:16:14'),(41,'Candra','Selalu menjadi wadah bagi adik adik maba teknik sehingga bisa lebih berkembang dan maju\r\nSemangat BEM-FT','2019-12-16 11:16:33','2019-12-16 11:16:33'),(42,'Kurniawati','Tetap totalitas walaupun di hadapkan dgn banyaknya urusan lain karena FT butuh orang yg berkomitmen','2019-12-16 11:25:46','2019-12-16 11:25:46');
+/*!40000 ALTER TABLE `aspirasi` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `bidang`
 --
 
+DROP TABLE IF EXISTS `bidang`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `bidang` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `bidang` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `bidang` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `bidang`
 --
 
-INSERT INTO `bidang` (`id`, `bidang`) VALUES
-(1, 'MEDINFO'),
-(8, 'Internal'),
-(9, 'BPH'),
-(10, 'Relasi'),
-(11, 'Sospol'),
-(12, 'Ekraf');
-
--- --------------------------------------------------------
+LOCK TABLES `bidang` WRITE;
+/*!40000 ALTER TABLE `bidang` DISABLE KEYS */;
+INSERT INTO `bidang` VALUES (1,'MEDINFO'),(8,'Internal'),(9,'BPH'),(10,'Relasi'),(11,'Sospol'),(12,'Ekraf');
+/*!40000 ALTER TABLE `bidang` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `form`
 --
 
+DROP TABLE IF EXISTS `form`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `form` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nama_form` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `jumlah_field` int(11) NOT NULL,
-  `bidang_id` int(10) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `bidang_id` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `form_bidang_id_foreign` (`bidang_id`),
+  CONSTRAINT `form_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `form`
+--
+
+LOCK TABLES `form` WRITE;
+/*!40000 ALTER TABLE `form` DISABLE KEYS */;
+INSERT INTO `form` VALUES (3,'Pendataan Mahasiswa Fakultas Teknik',27,1);
+/*!40000 ALTER TABLE `form` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `form_field`
 --
 
+DROP TABLE IF EXISTS `form_field`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `form_field` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `form_id` int(10) UNSIGNED DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `form_id` int(10) unsigned DEFAULT NULL,
   `nama_field` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `contoh_jawaban` text COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `contoh_jawaban` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `form_field_form_id_foreign` (`form_id`),
+  CONSTRAINT `form_field_form_id_foreign` FOREIGN KEY (`form_id`) REFERENCES `form` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `form_field`
+--
+
+LOCK TABLES `form_field` WRITE;
+/*!40000 ALTER TABLE `form_field` DISABLE KEYS */;
+INSERT INTO `form_field` VALUES (2,3,'[\"Nama Lengkap\",\"Jenis Kelamin\",\"NIM\",\"Program Studi\",\"Kelas\",\"Angkatan\",\"Asal\",\"Alamat\",\"Tempat, Tanggal Lahir\",\"No. Hp\",\"Email\",\"Hobi\",\"IPK\",\"Apakah anda Berbeasiswa?\",\"Beasiswa\",\"Apakah anda sudah memiliki Almamater?\",\"Ukuran Almamater\",\"Apakah kamu sudah punya Kartu Tanda Mahasiswa?\",\"Pernah mengikuti Pekan Kreatif Mahasiswa?\",\"Pernah mengikuti Program Hibah Bina Desa?\",\"Pernah membuat\\/mengikuti Karya Tulis?\",\"Lebih berminat mengikuti kegiatan apa?\",\"Apakah kamu memiliki Minat dibidang Seni atau Olahraga?\",\"Tuliskan Minat mu dibidang Seni atau Olahraga(Jika ada)\",\"Apakah kamu memiliki Bakat dibidang Seni atau Olahraga?\",\"Tuliskan Bakat mu dibidang Seni atau Olahraga(Jika ada)\",\"Pernah berprestasi disalah satu bidang Seni atau Olahraga?\"]','[\"\\\"Sandy Maulana\\\"\",\"\\\"Laki-Laki\\/Perempuan\\\"\",\"\\\"17.01.071.106\\\"\",\"\\\"Teknik Informatika\\\"\",\"\\\"A\\/B\\/C\\\"\",\"\\\"2017\\\"\",\"\\\"Jawa Barat\\\"\",\"Alamat sekarang tinggal, contoh: \\\"Jln. Cendrawasih, Gang.Asdek No.14, Brang Biji, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\\\"\",\"\\\"Sukabumi, 30 Agustus 1999\\\"\",\"Nomor Hp yang terdaftar WhatsApp, contoh: \\\"082260879023\\\"\",\"\\\"sandy@google.co.lc\\\"\",\"\\\"Menggambar, Komputer, Traveling\\\"\",\"Masukan IPK Terakhir anda, semisalnya belum ada, isikan: \\\"0,00\\\", jika sudah ada, isikan dengan format seperti ini: \\\"3,24\\\"\",\"\\\"Ya\\/Tidak\\\"\",\"\\\"Bidikmisi\\/Nusantara\\/Samawa\\/Tidak\\\"\",\"\\\"Sudah\\/Belum\\\"\",\"Jika sudah memiliki Almamater, isikan dengan jawaban: \\\"N\\\", jika belum memiliki Almamater, isikan dengan jawaban: S\\/M\\/L\\/XL\\/XXL\",\"\\\"Sudah\\/Belum\\\"\",\"\\\"Pernah\\/Belum\\\"\",\"\\\"Pernah\\/Belum\\\"\",\"\\\"Pernah\\/Belum\\\"\",\"Jika anda berminat mengikuti, isikan sesuai contoh: \\\"Pekan Kreatif Mahasiswa\\/Program Hibah Bina Desa\\\", jika tidak berminat , jawab dengan: \\\"Tidak Ada\\\"\",\"\\\"Seni\\/Olahraga\\/Tidak Ada\\\"\",\"Jika anda memiliki minat di Seni atau Olahraga, tuliskan minat tsb, contoh: \\\"Futsal\\\", jika tidak ada, jawab dengan: \\\"Tidak Ada\\\"\",\"\\\"Seni\\/Olahraga\\/Tidak Ada\\\"\",\"Jika anda memiliki bakat di Seni atau Olahraga, tuliskan bakat tsb, contoh: \\\"Futsal\\\", jika tidak ada, jawab dengan: \\\"Tidak Ada\\\"\",\"Jika anda pernah mengikuti lomba\\/kejuaraan, isikan dengan contoh: \\\"Juara 1 Lomba Bulutangkis tingkat kota-2009\\\", jika tidak ada, jawab dengan: \\\"Tidak Ada\\\"\"]');
+/*!40000 ALTER TABLE `form_field` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `form_jawaban`
 --
 
+DROP TABLE IF EXISTS `form_jawaban`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `form_jawaban` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `form_id` int(10) UNSIGNED DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `form_id` int(10) unsigned DEFAULT NULL,
   `jumlah_data` int(10) NOT NULL,
-  `jawaban_field` text COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `jawaban_field` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `form_jawaban_form_id_foreign` (`form_id`),
+  CONSTRAINT `form_jawaban_form_id_foreign` FOREIGN KEY (`form_id`) REFERENCES `form` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `form_jawaban`
+--
+
+LOCK TABLES `form_jawaban` WRITE;
+/*!40000 ALTER TABLE `form_jawaban` DISABLE KEYS */;
+INSERT INTO `form_jawaban` VALUES (2,3,176,'[[\"Sandy Maulana\",\"Laki-Laki\",\"17.01.071.106\",\"Teknik Informatika\",\"C\",\"2017\",\"Jawa Barat\",\"Jln. Cendrawasih, Gang.Asdek No.14, Brang Biji, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Sukabumi, 30 Agustus 1999\",\"082260879023\",\"sandy@google.co.lc\",\"Komputer, Networking, Programming\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"AZZAHRAH MAULYA SAFIRA\",\"Perempuan\",\"17.01.071.016\",\"Teknik Informatika\",\"A\",\"2017\",\"Kepulauan Riau\",\"Desa Pungka\",\"Padang, 21 Maret 1999\",\"082386383900\",\"azzahra.maulya@gmail.com\",\"Traveling\",\"3,12\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Seni\",\"Design\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"RANDI ARDYANSYAH\",\"Laki-laki\",\"16.01.013.014\",\"Teknik Industri\",\"A\",\"2016\",\"Nusa Tenggara Barat\",\"BOAK A UNTER IWES\",\"SUMBAWA 22 MARET 1997\",\"082342252984\",\"randi.ardyansyah46@gmail.com\",\"BOXING. TENIS MEJA .BILIARD. GODAIN CWE\",\"2.55\",\"Tidak\",\"Tidak Ada\",\"Belum\",\"XXL\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Olahraga\",\"TENIS MEJA\",\"Olahraga\",\"TENIS MEJA\",\"Tidak Ada\"],[\"Linda Sapitri\",\"Perempuan\",\"16.01.013.006\",\"Teknik Industri\",\"A\",\"2016\",\"Nusa Tenggara Barat\",\"Dsn. Batu Praga Desa Lape\",\"Sumbawa, 01 November 1997\",\"082342878286\",\"lindasapitri978@gmail.com\",\"membaca\",\"3.10\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Sudah\",\"Pernah\",\"Belum\",\"Pernah\",\"Program Hibah Bina Desa\",\"Seni\",\"menulis cerpen dan puisi\",\"Seni\",\"menulis puisi dan cerpen\",\"Tidak Ada\"],[\"Anggi Sri Ardhana\",\"Perempuan\",\"16.01.013.002\",\"Teknik Industri\",\"A\",\"2016\",\"Sumatera Utara\",\"Kebayan\",\"Tebing Tinggi,  23 November 1997\",\"085275539560\",\"anggisriardhana@gmail.com\",\"Voly\",\"3.03\",\"Ya\",\"Nusantara\",\"Sudah\",\"N\",\"Sudah\",\"Pernah\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Voly\",\"Olahraga\",\"Voly\",\"Tidak Ada\"],[\"Ariyanto\",\"Laki-laki\",\"16.01.013.003\",\"Teknik Industri\",\"A\",\"2016\",\"Sulawesi Tengah\",\"Pungka\",\"Poso 8 oktober\",\"085338243605\",\"Arizhen21@gmail.com\",\"Futsal\",\"2.83\",\"YA\",\"Nusantara\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak Ada\"],[\"Muhammad Sayyid Rafi\",\"Laki-laki\",\"16.01.013.012\",\"Teknik Industri\",\"A\",\"2016\",\"DKI Jakarta\",\"Labuhan sumbawa\",\"Jakarta, 04 Juli 1998\",\"085333248530\",\"Sayyidrafi@outlook.com\",\"Gamers\",\"2.97\",\"Ya\",\"Nusantara\",\"Belum\",\"XXL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni, Olahraga\",\"Gambar, esport\",\"Seni\",\"Gambar\",\"Kaligrafi khat al-qur\'an 2012\"],[\"Muhyiddin Syaief\",\"Laki laki\",\"16.01.073.018\",\"Teknik sipil\",\"Sipil 2016 A\",\"2016\",\"Makassar\",\"Pungka Sumbawa besar\",\"Makassar 02 Juni 1998\",\"085333623902\",\"Muhyiddinsyarief98@gmail.com\",\"Games, traveling\",\"3,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Pernah\",\"Pernah\",\"Pernah\",\"Sosial\",\"Olahraga\",\"Volly\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Novi Novita\",\"Perempuan\",\"18.01.013.096\",\"Teknik informatika\",\"C\",\"2018\",\"Sumbawa\",\"Jln. Lintas sumbawa bima moyo hilir\",\"Sumbawa, 13 november 1999\",\"085331086683\",\"novinovita927@gmail.com\",\"Permainan volly\",\"3,60\",\"Ya\",\"Tau samawa\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Volly\",\"Olahraga\",\"Volly\",\"Tidak ada\"],[\"Ghibra Maulana Umaro\",\"Laki-Laki\",\"18.01.016.014\",\"Teknik Sipil\",\"A\",\"2018\",\"Sumbawa\",\"Jln. Ki Hajar Dewantara No.112, Bukit Tinggi, Pekat, Sumbawa\",\"Sumbawa, 29 April 2000\",\"082339168952\",\"ghibra2maulana@gmail.com\",\"Basketball\",\"3.06\",\"3.06\",\"Bidikmisi\",\"sudah\",\"L\",\"belum\",\"belum\",\"belum\",\"belum\",\"Pekan kreatif mahasiswa\",\"olahraga\",\"basketball\",\"olahraga\",\"Basketball\",\"Juara 1 Popda Sumbawa Basketball\"],[\"Ridayani\",\"Wanita\",\"17.01.011.041\",\"Teknik.metalurgi\",\"B\",\"2017\",\"Kendari\",\"Gang durian 1 Kel.uma sima\",\"Amasara,24 mei 1999\",\"085253349756\",\"ridayanismanlibes@gmail.com\",\"Olahraga\",\"2.90\",\"Iya\",\"Ya\",\"Belum\",\"S\",\"Belum\",\"Tidak\",\"Tidak\",\"Pernah\",\"Menulis\",\"Olahraga\",\"Tenis meja\",\"Olahraga\",\"Tenis meja\",\"Juara 1 embu bela diri kempo\"],[\"Dany Angga Saputra\",\"Laki-laki\",\"17.01.071.022\",\"Teknik Informatika\",\"A\",\"2017\",\"Jawa Barat\",\"Jalan lintas kebayan  gang persatuan, Kelurahan Seketeng, Kecamatan Sumbawa, Kabupaten Sumbawa, Nusa Tenggara Barat. 84313\",\"Ngawi, 07 Desember 1999\",\"081380699259\",\"Danyangga007@gmail.com\",\"Futsal, Travelling, Touring\",\"2,89\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Olahraga\",\"Futsal, Tenis Meja, Badminton\",\"Olahraga\",\"Futsal, Tenis Meja, Badminton\",\"Tidak Ada\"],[\"Ahmad Azzam S\",\"Laki-Laki\",\"16.01.071.004\",\"Informatika\",\"A\",\"2016\",\"Jawa Timur\",\"Kp. Mandar RT 01 RW 08 Desa Lab. Sumbawa\",\"Surabaya, 27 Desember 1996\",\"081238950193\",\"ahmadazzam123654@gmail.com\",\"Mengaji\",\"3,19\",\"Ya\",\"Nusantara\",\"Sudah\",\"L (Aslinya XL cuman waktu itu XL nya abis)\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasisa\",\"Seni\",\"Musik\",\"Ada\",\"Renang\",\"Tidak Ada\"],[\"Fikri Nuryansah\",\"Laki-laki\",\"17.01.071.037\",\"Teknik Informatika\",\"A\",\"2017\",\"Banten\",\"Desa Jorok kec. Unter Iwes\",\"Serang, 08 Desember 1999\",\"085338522742\",\"fikrinuryansah@gmail.com\",\"Menggambar\",\"3.35\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Musik tari\",\"Seni\",\"Musik\",\"Tidak Ada\"],[\"Virginia octa herlina\",\"Perempuan\",\"17.01.011.051\",\"Teknik metalurgi\",\"B\",\"2017\",\"Sumbawa barat\",\"Jln. Lintas balat, desa perjuk Rt 02 Rw 09 Kel. Telaga bertong Kec. Taliwang Kab Sumbawa Barat, Nusa Tenggara Barat\",\"Jakarta, 18 oktober 1998\",\"082144321785\",\"Virginia.nasution0412@gmail.com\",\"Membaca\",\"3.39\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Sudah\",\"Belum\",\"Belum\",\"Pernah\",\"Tidak ada\",\"Olah raga\",\"Voli\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Febrianti\",\"Perempuan\",\"16.01.071.035\",\"Teknik Informatika\",\"A\",\"2016\",\"Sumbawa\",\"Batu Alang\",\"Empang, 11 Februari 1997\",\"082340500629\",\"athikfebrianti84@gmail.com\",\"Masak\",\"3,15\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"Riza monica\",\"Perempuan\",\"17.01.011.045\",\"Teknik metalurgi\",\"B\",\"2017\",\"Sumbawa\",\"Batu alang\",\"Alas, 15 januari 1999\",\"081338373124\",\"Rizamonica99@gmail.com\",\"Belanja dan belajar\",\"2.99\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Musik\",\"Tidak ada\",\"Tidak ada\",\"Tidak pernah\"],[\"Dody Pranata\",\"Laki-laki\",\"19.01.013.018\",\"Teknik Informatika\",\"A\",\"2019\",\"Sumbawa\",\"Jln. Lintas Sumbawa-Lunyuk,\",\"Ledang, 09 Desember 2001\",\"085338868670\",\"dodyfranata004@gmail.com\",\"Komputer\",\"0,00\",\"Tidak\",\"Tidak Berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Pernah\",\"Belum\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"Rais\",\"Laki-laki\",\"18.01.012.040\",\"Teknik mesin\",\"B\",\"2018\",\"Kalimantan Utara\",\"Bukit tinggi\",\"Nunukan, 05 Mei 1999\",\"081348159122\",\"rais81066@gmail.com\",\"Futsal\",\"3.37\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Pernah\",\"Pernah\",\"Pekan Kreatif\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Vinna Jardyagustin\",\"Perempuan\",\"19.01.013.064\",\"Teknik Informatika\",\"D\",\"2019\",\"Sumbawa\",\"Jln.Sumbawa-Lunyuk km.17 Desa Marga Karya kec.Moyo Hulu\",\"Sumbawa,9 Agustus 2001\",\"085253853230\",\"VinnaSumbawa@gmail.com\",\"Olahraga\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Olahraga\",\"Basket,Voly\",\"Olahraga\",\"Baaket,voly\",\"Juara 2 basket tingkat kabupaten-2018\"],[\"Nila Trisna Utami\",\"Perempuan\",\"18.01.013.092\",\"Teknik Informatika\",\"C\",\"2018\",\"Sumbawa\",\"Jln.OsapSio, Kamp.Irian bawah, Kel.UmaSima, Sumbawa Besar\",\"Sumbawa, 7 Desember 1999\",\"085338114077\",\"Nilatrisna020@gmail.com\",\"Menggambar\",\"3.22\",\"Ya\",\"Tau Samawa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Melukis\",\"Seni\",\"Melukis\",\"Tidak ada\"],[\"Yoga Oxa Wahyu Pratama\",\"Laki laki\",\"18.01.016.010\",\"Teknik sipil\",\"A\",\"2018\",\"NTB\",\"Lape, jalan Sumbawa Bima\",\"Sumbawa,13 Oktober 2000\",\"085238635676\",\"yogaoxaowp2000@gmail.com\",\"Sepak bola\",\"2,85\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Bina desa\",\"Olahraga\",\"Sepak bola\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Ihza abdian tardho\",\"Laki-laki\",\"19.01.013.126\",\"Teknik informatika\",\"D\",\"2019\",\"Sumbawa besar\",\"Btn olat rarang blok O-27 labuhan sumbawa\",\"Sumbawa, 07 april 2001\",\"085337028852\",\"ihzado4@gmail.com\",\"Traveling\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Nitis Dwi Lestari\",\"Perempuan\",\"17.01.011.038\",\"Teknik Metalurgi\",\"B\",\"2017\",\"Sumbawa\",\"Desa dete kecamatan lape rt. 09 rw.02 bukit tinggi\",\"Sumbawa, 18 Februari 1999\",\"085238935122\",\"nitisdwilestari47@gmail.com\",\"Singing\",\"3,18\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Sudah\",\"Belum\",\"Pernah\",\"Pernah\",\"Tidak ada\",\"Seni\",\"Musik\\/vokal\",\"Seni\",\"Tarik suara (vokal)\",\"Juara 3 nyanyi tingkat kecamatan\"],[\"Dyah Chofifa Qotrunnada\",\"Perempuan\",\"19.01.011.004\",\"Teknik Metalurgi\",\"A\",\"2019\",\"Sumbawa Besar\",\"Jln. Kebayan, Gang Tambora 1 No.13\",\"Sumbawa Besar,30 Mei 2001\",\"082341585970\",\"chofifahqotrunnada@gmail.com\",\"Traveling\",\"0,00\",\"Tidak\",\"Tidak\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"Muhammad Rifki R\",\"Laki-laki\",\"18.01.013.087\",\"Teknik Informatika\",\"C\",\"2018\",\"Sumbawa\",\"Btn.Baiti jannaty Blok.E2 No.4\",\"Mapin kebak, 21 Februari 1999\",\"082341188689\",\"mrifkir90@gmail.com\",\"Menggambar\",\"2,80\",\"Ya\",\"Samawa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Seni\",\"Melukis\",\"Seni\",\"Melukis\",\"Tidak ada\"],[\"Deri Afriliyansa\",\"Laki laki\",\"16.01.071.020\",\"Informatika\",\"A\",\"2016\",\"Sumbawa\",\"Brang bara\",\"21 april 1998\",\"085964263563\",\"deriti16@gmail.com\",\"Futsal\",\"2. 98\",\"Tidak\",\"Tidak beasiswa\",\"Sudah\",\"L\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Anna Sayuni\",\"Perempuan\",\"16.01.071.012\",\"Teknik Informatika\",\"A\",\"2016\",\"Sumbawa\",\"Dusun Olat Rarang,  RT 004 RW 007 Labuhan Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Lotim,  31 Maret 1998\",\"085337148134\",\"annaasayunii11@gmail.com\",\"Memasak\",\"3.41\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Renang\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Mita yulanda\",\"Perempuan\",\"18.01.013.081\",\"Teknik informatika\",\"C\",\"2018\",\"Sumbawa\",\"BTN bukit permai\",\"Ngali, 27 oktober 1998\",\"085337201591\",\"Yupamda@google.co.Ic\",\"Nyanyi\",\"3,18\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"PKM\",\"Seni\",\"Nyanyi\",\"Seni\",\"Nyanyi\",\"Juara 2 puisi tingakat kabupaten\"],[\"Rahmad  guswandi\",\"Laki\",\"18.01.013.139\",\"Informatika\",\"C\",\"2018\",\"Utan\",\"Desa motong\",\"Utan,28 oktober 1999\",\"081337091952\",\"Guswandirahmad@gmail.com\",\"Beladiri\",\"3,34\",\"Tidak\",\"Tidak beasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Karate\",\"Olahraga\",\"Karate\",\"Juara 2 karate tingkat kabupaten\"],[\"Rodiatul Fitri\",\"Perempuan\",\"19.01.011.011\",\"Teknik metalurgi\",\"A\",\"2019\",\"Alas Barat\",\"Batu Alang\",\"Mapin kebak,12 Desember 2000\",\"087711419411\",\"rodiatulfitri26@gmail.com\",\"Nyanyi\",\"\\\"0,00\\\"\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Seni\",\"Nyanyi,nari\",\"Seni\",\"Nyanyi,nari\",\"Tidak ada\"],[\"Wawan satriawan\",\"Laki laki\",\"18.01.012.046\",\"Teknik mesin\",\"B\",\"2018\",\"Sumbawa\",\"Moyo hilir\",\"Sumbawa, 18 agustus 2000\",\"085333614162\",\"Wawansatriawan449@gmail.com\",\"Futsal\\/sepak bola\",\"2,83\",\"Tidak\",\"Tidak beasiswa\",\"Sudah\",\"Xl\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Dua nya\",\"Musik dan futsal\",\"Dua nya\",\"Musik dan futsal\",\"Tidak ada\"],[\"Nova Aprillia Pangesti\",\"Perempuan\",\"18.01.013.094\",\"Teknik Informatika\",\"C\",\"2018\",\"Sumbawa\",\"Jln. Cenderawasih, perumahan gunung setia No.51, Brang biji, Sumbawa\",\"Sumbawa, 01 april 2000\",\"085238335011\",\"Pangestinova26@gmail.com\",\"Rebahan, online, nyemil, ngedrama, ngayal :\'3\",\"3,31\",\"Ya\",\"Bidikmisi\",\"Sudah si\",\"M\",\"Nda ada\",\"Belum\",\"Belum ughaa\",\"Pernah\",\"Debat bahasa indo\",\"Seni\",\"Tari tradisional dan modern\",\"Seni\",\"Tari wee\",\"Juara 3 FLS2N SMK 2015, juara 2 FLS2N SMK 2016\"],[\"Olvira nanda\",\"Perempuan\",\"19.01.013.115\",\"teknik informatika\",\"C\",\"2019\",\"kecamatan utan\",\"pekat, kabupaten sumbawa\",\"utan, 18 april 2001\",\"085339229843\",\"Olvirananda@gmail.com\",\"Masak\",\"0,00\",\"Ya\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program hibah bina desa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Novi aswatun hasanah\",\"P\",\"18.01.013.095\",\"Teknik informatika\",\"C\",\"2018\",\"Dusun tanjung bila desa labuhan kuris kec  lape\",\"Btn bukit permai\",\"Tanjung bila,05 November 2000\",\"085333059691\",\"noviaswstun2@gmail.com\",\"Treveling\",\"3.8\",\"Tidak\",\"Tidak ada\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Voli\",\"Olahraga\",\"Badminton\",\"Tidak ada\"],[\"Teguh dwi jauhari umar\",\"Laki-laki\",\"18.01.016.030\",\"Teknik sipil\",\"A\",\"2018\",\"Sumbawa\",\"Batu alang\",\"Langam,24 mei 1999\",\"085238907650\",\"Tdwijauhariumar@gmail.com\",\"Membaca buku dan gambar\",\"3,34\",\"Iya\",\"Bidik misi\",\"Sudah\",\"L\",\"Belum\",\"Pernah\",\"Pernah\",\"Belum\",\"Pkm dan bina desa\",\"Seni dan olahraga\",\"Menggambar dan berenang\",\"Ya\",\"Menggambar\",\"Tidak\"],[\"M. Rizal Madani\",\"Laki-Laki\",\"17.01.013.077\",\"Teknik Informatika\",\"C\",\"2018\",\"Sumbawa\",\"Brang bara\",\"Alas, 1 Juni 2000\",\"081238093535\",\"kojuro585@gmail.com\",\"Baca komik\",\"3.76\",\"Ya\",\"Samawa\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Taekwondo\",\"Olahraga\",\"Taekwondo\",\"Tidak ada\"],[\"Mnh. Septiani Baidillah\",\"Perempuan\",\"17.01.011.028\",\"Teknik Metalurgi\",\"A dan B\",\"2017\",\"Sumbawa Besar\",\"Jln. Osapsio, No. 15, RT002\\/RW009, Kel. Umasima, Sumbawa Besar, Nusa Tenggara Barat, Indonesia\",\"Sumbawa Besar, 27 September 1998\",\"085339864581\",\"mnhseptianibaidillah@gmail.com\",\"Menggambar, komputer, traveling, masak, makan, tidur, baca komik dan novel\",\"3.49\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Sudah\",\"Belum\",\"Pernah\",\"Pernah\",\"Program hibah bina desa\",\"Seni\",\"Desain, Fotografi, melukis\\/menggambar\",\"Olahraga\",\"Catur\",\"Juara 1 lomba reporter saka Wanabakti tingkat kabupaten-2018, juara 3 lomba foto saka Wanabakti tingkat kabupaten-2018, juara 3 lomba video pendek gebyar kalam-2018, juara 2 lomba catur putri tingkat kecamatan-2009, juara 3 lomba melukis tingkat kecamatan-2010, juara 4 lomba fashion show tingkat kecamatan-2006\"],[\"Rahmad  guswandi\",\"Laki\",\"18.01.013.139\",\"Informatika\",\"C\",\"2018\",\"Utan\",\"Desa motong\",\"Utan,28 oktober 1999\",\"081337091952\",\"Guswandirahmad@gmail.com\",\"Beladiri\",\"3,34\",\"Tidak\",\"Tidak beasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Karate\",\"Olahraga\",\"Karate\",\"Juara 2 karate tingkat kabupaten\"],[\"Eva pebrianti\",\"Perempuan\",\"19.01.014.022\",\"Teknik elektro\",\"A\",\"2019\",\"Sumbawa\",\"Asrama\",\"Mapin kebak 02 februari 2001\",\"082341253962\",\"Pebriantieva763@gmail.com\",\"Traveling dan makan\",\"0.00\",\"Ya\",\"Grade 2\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah bina desa\",\"Seni\",\"Teater\",\"Seni\",\"Teater\",\"Tidak ada\"],[\"Andi Syahril AM\",\"Laki laki\",\"18.01.012.008\",\"Teknik Mesin\",\"A\",\"2018\",\"Kalimantan utara\",\"Pekat, sumbawa\",\"Nunukan, 5 januari 2000\",\"085311401253\",\"Syahrilseimemggaris@gmail.com\",\"Badminton\",\"3.02\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"PKM\",\"Olahraga\",\"Badminton\",\"Olahraga\",\"Badminton\",\"Juara 3 tunggal putra Badminton tingkat provinsi 2017 O2SN SMK se kalimantan utara\"],[\"Eva Rahmiati\",\"Perempuan\",\"17.01.071.028\",\"Teknik Informatika\",\"A\",\"2017\",\"Sulawesi Tenggara\",\"Batu Alang\",\"Muna, 09 mei 1999\",\"082292423662\",\"evarahmiati@gmail.com\",\"Buat puisi\",\"3,40\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Tidaka da\",\"Olahraga\",\"Volly\",\"Tidak ada\"],[\"FIKRI\",\"Laki Laki\",\"18.01.015.003\",\"Teknik Industri\",\"A\",\"2018\",\"Banten\",\"Samapuin\",\"Serang, 21 juli 1999\",\"085694126790\",\"adittiavikkrry@gmail.com\",\"Berenang\",\"3.68\",\"Ya\",\"Bidikmisi\",\"ya\",\"M\",\"belum\",\"belum\",\"belum\",\"belum\",\"pkm\",\"olahraga\",\"basket\",\"olahraga\",\"basket\",\"juara 2 basket 2018\"],[\"Radian Syaputra\",\"Laki-Laki\",\"18.01.013.101\",\"Teknik Informatika\",\"C\",\"2017\",\"Sumbawa\",\"Gang depan TPU, PPN bukit indah, Sumbawa, Nusa Tenggara Barat\",\"Sumbawa, 11 April 2000\",\"085337129434\",\"radianputrasya20@gmail.com\",\"Membaca\",\"2,95\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Musik\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak ada\"],[\"Yudianto\",\"Laki-laki\",\"19.01.013.026\",\"Informatika\",\"TI D\",\"2019\",\"Kaduk\",\"Sumbawa\",\"07-10-200\",\"085338920317\",\"Yudiantosumbawa74@gmail.com\",\"Futsal\",\"3\",\"Tidak\",\"Tidak\",\"Sudah\",\"M\",\"Blum\",\"Belum\",\"Belum\",\"Sudah\",\"Himpunan\",\"Olaraga\",\"Futsal\",\"Olaraga\",\"Futsal\",\"Juara satu antar kampung\"],[\"Hafiz Gunawan Pasaribu\",\"Laki laki\",\"18.01.012.025\",\"Teknik Mesin\",\"MSN 3A\",\"2018\",\"Sumatera Utara\",\"Perate Atas\",\"Medan, 21 April 2000\",\"085333988148\",\"pasaribuhafiz21@gmail.com\",\"Membaca\",\"2,98\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Seni Melukis\",\"Olahraga\",\"Basket\",\"Tidak pernah\"],[\"St.annisa\",\"perempuan\",\"18.01.016.055\",\"Teknik sipil\",\"B\",\"2018\",\"Bimq\",\"Perumahan graha satelit\",\"Bima,19 januari 2000\",\"082339818826\",\"annisa19012000@gmail.com\",\"Membaca\",\"2,94\",\"ya\",\"Bidikmisi\",\"sudah\",\"N\",\"Belum\",\"Belum\",\"Pernah\",\"Belum\",\"PKM\",\"Seni\",\"Menari\",\"tidak ada\",\"tidak ada\",\"tidak ada\"],[\"Muhammad Firmansyah\",\"laki-laki\",\"19.01.013.048\",\"teknik informatika\",\"c\",\"2019\",\"Sumbawa\",\"perumahan bukit permai\",\"utan, 12 Februari 1999\",\"085333161122\",\"firman.apa99@gmail.com\",\"main game\",\"0,00\",\"ya\",\"UTS\",\"sudah\",\"xl\",\"belum\",\"belum\",\"belum\",\"belum\",\"pkm\",\"seni dan olahraga\",\"futsal\",\"musik\",\"tidak ada\",\"tidak ada\"],[\"Ismail\",\"Laki-laki\",\"19.01.013.040\",\"Teknik informatika\",\"B\",\"2019\",\"Sumbawa\",\"Jl. Raya btn bukit permai\",\"Alas, 25 juni 2000\",\"085237347729\",\"Ismaildinata098@gmail.com\",\"Bulutangkis\",\"0,00\",\"Ya\",\"Uts grade II\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Bulutangkis\",\"Olahraga\",\"Bulutangkis\",\"Juara 2 tingkat kota-2009\"],[\"\\\"Wawa Marisa\\\"\",\"\\\"Perempuan\\\"\",\"19.01.013.068\",\"\\\"Teknik Informatika\\\"\",\"\\\"D\\\"\",\"\\\"2019\\\"\",\"\\\"Sumbawa Besar\\\"\",\"\\\"Dusun Batu Alang\\\"\",\"\\\"Lab-Ala , 10 Mei 2000\\\"\",\"\\\"085253300867\\\"\",\"\\\"@Wawamarisa867@gmail.com\\\"\",\"\\\"Membaca\\\"\",\"Belum ada\",\"\\\"Tidak\\\"\",\"\\\"Tidak berbeasiswa\\\"\",\"\\\"Sudah\\\"\",\"\\\"M\\\"\",\"\\\"Belum\\\"\",\"\\\"Belum\\\"\",\"\\\"Belum\\\"\",\"\\\"Belum\\\"\",\"\\\"Tidak Ada\\\"\",\"\\\"Seni\\\"\",\"\\\"Menyanyi\\\"\",\"\\\"Seni\\\"\",\"\\\"Menyanyi\\\"\",\"\\\"Tidak ada\\\"\"],[\"Tara rizkayanti\",\"Perempuan\",\"19.01.013.108\",\"Informatika\",\"D\",\"2019\",\"Sumbawa\",\",brang biji, sumbawa besar, Nusa tenggara Barat\",\"Alas, 20 mei 2001\",\"087865815477\",\"Tararizkayanti@gmail.com\",\"Membaca\",\"0,00\",\"Ya\",\"Samawa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Pmr\",\"Seni\",\"Baca puisi\",\"Seni\",\"Baca puisi\",\"Tidak ada\"],[\"Andi martasya\",\"Perempuan\",\"19.01.013.092\",\"Teknik informatika\",\"A\",\"2019\",\"Sumbawa\",\"jln. Olat maras, boak, sumbawa besar, nusa tenggara barat\",\"Labuhan mapin, 19 oktober 2019\",\"087766646757\",\"Martasya19@gmail.com\",\"Membaca, komputer\",\"0,00\",\"Tidak\",\"Tidak beasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Yandiega Pragasta\",\"Laki-laki\",\"19.01.013.059\",\"Informatika\",\"D\",\"2019\",\"Subawa besar\",\"Dusun padak RT 03 RW 15\",\"Sumbawa,7 mei 2001\",\"085333620684\",\"yandikavyrenzi@gmail.com\",\"Musik\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Seni\",\"Musik\",\"Seni\",\"Musik\",\"Tidak ada\"],[\"Syamsul Hidayat\",\"Laki Laki\",\"19.01.014.008\",\"Teknik Elektro\",\"Dikti\",\"2019\",\"Sulawesi Tenggara\",\"Asrama UTS\",\"Lede,  14 juni 2001\",\"082293126954\",\"Culutomia\",\"Sepak bola\",\"0,00\",\"Ya\",\"Nusantara\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Juara 1 Lomba Sepak bola tingkat Desa\"],[\"Nur Azman azhri\",\"Laki laki\",\"18.01.011.043\",\"Teknik metalurgi\",\"B\",\"2018\",\"Kalimantan Utara\",\"Batu Alang\",\"Nunukan 21 November 1998\",\"085350131214\",\"azman.azhari13@gmail.com\",\"Mendengar,menulis, berbicara\",\"3.23\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pkm\",\"Seni\",\"Sastra\",\"Seni\",\"Satra\",\"Tidak ada\"],[\"Rabiul Aldi Tri Pramudia\",\"laki\",\"18.01.012.039\",\"Teknik mesin\",\"b\",\"2018\",\"Sumbawa\",\"Kampung untir RT02\\/Rw07\",\"sumbawa ,17 juni 2000\",\"082146532228\",\"Rabiulaldi24@gmail.com\",\"Touring\",\"2.7\",\"Tidak\",\"Tidak beasiswa\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Aminah\",\"Perempuan\",\"19.01.013.037\",\"Informatika\",\"A\",\"2019\",\"Labangka, Sumbawa\",\"Boak, Kec. Moyo Hulu, Sumbawa\",\"Labangka, 4 Oktober 2000\",\"085253184787\",\"aminahlabangka85@gmail.com\",\"Menyanyi\",\"0,00\",\"Ya\",\"Beasiswa UTS grade II\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Menyanyi dan bermain musik\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Abdullah s dua ona\",\"Laki-laki\",\"17.01.071.003\",\"Informatika\",\"A\",\"2017\",\"NTT\",\"Batualang\",\"Malaysia 06-10-1996\",\"082340680786\",\"Abdullahcipong@gmain. Com\",\"Main bola\",\"2.75\",\"Ya\",\"Bisikmisi\",\"Belum\",\"L\",\"Belum\",\"Pernah\",\"Pernah\",\"Pernah\",\"Membaca puisi\",\"Ada\",\"Membuat puisi\",\"Ada\",\"Menulis puisi\",\"Pernah\"],[\"Suryadi\",\"Laki-laki\",\"18.01.012.043\",\"Teknik Mesin\",\"Mesin B\",\"2018\",\"Sumbawa\",\"Boak luar\",\"Ledang 13 Juni 1999\",\"081999937470\",\"suryadi9906@gmail.com\",\"Traveling\",\"\\\"2,95\\\"\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Main bola\",\"Tidak ada\"],[\"Irmayanti\",\"Perempuan\",\"18.01.013.068\",\"Teknik Informatika\",\"B\",\"2018\",\"Kalimantan utara\",\"Jln. Olat maras desa pernek kec. Moyo hulu kab. Sumbawa\",\"Nunukan, 13 juli 1998\",\"085249908214\",\"Irma13yanti@gmail.com\",\"Volly\",\"2,85\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Seminar mahasiswa\",\"Olahraga\",\"Main bola volly\",\"Olahraga\",\"Main bola volly\",\"Tidak\"],[\"Sukma Asyfinawati\",\"Perempuan\",\"17.01.071.113\",\"Teknik Informatika\",\"C\",\"2017\",\"Aceh\",\"Samapuin\",\"Durian Kawan, 15 Mei 2000\",\"085359425620\",\"sukmaasyfina@gmail.com\",\"Baca Novel\",\"2,93\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Seni\",\"Handy Craft\",\"Seni\",\"Handy craft\",\"Tidak ada\"],[\"Ridwan Bagas Setiawan\",\"Laki-Laki\",\"17.01.011.042\",\"Teknik Metalurgi\",\"Mg-5B\",\"2017\",\"Jawa Timur\",\"Perumahan Graha Satelit Gg.Satelit 4 No.B15\",\"Banjarnegara, 14 Juni 1999\",\"082324359066\",\"ridwanbagassetiawan12@gmail.com\",\"Berenang,Badminton\",\"3,42\",\"Ya\",\"Bidik Misi\",\"Sudah\",\"M\",\"Sudah\",\"Belum\",\"Belum\",\"Pernah\",\"Pkm,Phbd\",\"Olahraga\",\"Badminton,Berenang,Basket,Atletik\",\"Olahraga\",\"Atletik,Badminton,Basket,Berenang\",\"Juara Harapan 1 Lari 100 M\"],[\"Bima Moch Hafidh Al Fadlurrohman\",\"Laki-Laki\",\"17.01.071.019\",\"Informatika\",\"A\",\"2017\",\"Jawa Barat\",\"Jl. Bypass, Ds Jorok, Kec. Unter Iwes, Kabupaten Sumbawa\",\"Lampung, 13 Mei 1999\",\"082240463033\",\"bimamh11@gmail.com\",\"Ngegame\",\"3,33\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatifitas Mahasiswa\",\"Olahraga\",\"Pencak Silat\",\"Tidak ada\",\"Tidak ada\",\"Juara 1 Lomba Pencaksilat se JABODETABEK 2015,2016\"],[\"Marsa Prayuda\",\"Laki-laki\",\"19.01.013.017\",\"Teknik Informatika\",\"C\",\"2019\",\"Lenangguar\",\"Dusun Rate, kec. Lenangguar, Kab. Sumbawa NTB\",\"Rate, 13 Desember 2000\",\"085253362246\",\"marsaprayuda@gmail.com\",\"Menggambar\",\"0,00\",\"Tidak\",\"Tidak Berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak Ada\"],[\"Samsurya\",\"Laki-Laki\",\"19.01.013.075\",\"Teknik Informatika\",\"D\",\"2019\",\"NTB\",\"Asrama UTS Jln. Olat Maras, Desa Pernek, Moyo Hulu Sumbawa Besar NTB\",\"Dompu, 16 April 2001\",\"081236276203\",\"samsuryalz.44@gmail.com\",\"reading, learning, working and programming\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Pekan Kreatif Mahasiswa\",\"Tidak\",\"tidak ada\",\"ada\",\"tari tradisional\",\"juara 1 FLS2N Tari Tradisional tingkat Provinsi, Juara 1 FLS2N Tari Tradisional tingkat Kabupaten,\"],[\"Abi Aulia\",\"perempuan\",\"19.01.13.011\",\"Teknik Informatika\",\"A\",\"2019\",\"Sumbawa\",\"Batu Alang\",\"Sumbawa, 15 Juni 2001\",\"085338901084\",\"abi01aulia@gmail.com\",\"Membaca, memasak\",\"0,00\",\"Tidak\",\"Tidak beasiswa\",\"sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"belum\",\"Program Hibah Bina Desa\",\"seni dan Olahraga\",\"Menari\",\"seni\",\"menari\",\"Juara 2 lomba Nari tingkat desa-2017\"],[\"Trisman Sanjaya\",\"Laki-Laki\",\"17.01.012.023\",\"T. Mesin\",\"A\",\"2017\",\"Sumbawa\",\"Rt 03 rw 03 dusun kukin A desa Kukin Kec. Moyo Utara kab. Sumbawa Besar\",\"Kukin, 13 Mei 1999\",\"085237417526\",\"trismanchibot013@gmail.com\",\"Perang online\",\"2.90\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Badminton\",\"Tidak Ada\",\"Tidak ada\",\"Tidak Ada\"],[\"Muhammad Azzam Al Fauzie\",\"Laki-Laki\",\"19.01.013.084\",\"Teknik Informatika\",\"C\",\"2019\",\"Lampung\",\"Asrama Univesitas Teknologi Sumbawa\",\"Lampung Tengah,25 Mei 2001\",\"082183214881\",\"azzamliwa25@gmail.com\",\"Disainer,Fotografer,Editing Vidio\",\"0,00\",\"Ya\",\"Nusantara\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Disainer,Fotografer\",\"Seni\",\"Disainer,Fotografer\",\"Juara 2 Lomba Disaind Poster tingkat kabupaten-2018\"],[\"Malik Bayu Aji\",\"Laki-Laki\",\"19.01.013.007\",\"Teknik Informatika\",\"C\",\"2019\",\"Jawa Tengah\",\"Dusun Kapas Sari, Moyo Hilir\",\"Maluk, 11 Oktober 2000\",\"085333788220\",\"drexeded@gmail.com\",\"Browsing, Gaming, Mendengar Musik, Camping\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Sri wahyuni\",\"Perempuan\",\"18.01.016.001\",\"Teknik sipil\",\"A\",\"2018\",\"Sumbawa\",\"Jln. By Pass Sering\",\"Utan, 28 Juni 2000\",\"082339419313\",\"Sriwahyuni2361@gmail.com\",\"Menulis\",\"3.11\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Bernyayi\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Risyan Idzaki Uwais Al-Qarni\",\"Laki-Laki\",\"18.01.016.049\",\"Teknik Sipil\",\"-\",\"2018\",\"Jawa Barat\",\"Jl. Gunung Setia Rt.002\\/007 Kel. brangbiji, Kec. Sumbawa, Kab. Sumbawa, NTB 84316\",\"Ciamis, 22 April 1999\",\"085235895152\",\"uwais337@gmail.com\",\"Olahraga\",\"2,44\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Seni\",\"Foto, gambar\",\"Olahraga\",\"Futsal\",\"Tidak Ada\"],[\"Hasmarita\",\"perempuan\",\"18.01.016.004\",\"Teknik sipil\",\"A\",\"2018\",\"Sumbawa besar\",\"boak unter iwes\",\"boak,20 januari 2000\",\"085238926271\",\"Hasmarita2001@gmail.com\",\"Travelling\",\"2,78\",\"Tidak\",\"tidak punya beasiswa\",\"Sudah\",\"M\",\"belum\",\"belum\",\"belum\",\"belum\",\"tidak ada\",\"olahraga\",\"volly\",\"tidak ada\",\"tidak ada\",\"Tidak ada\"],[\"Hasmarita\",\"perempuan\",\"18.01.016.004\",\"Teknik sipil\",\"A\",\"2018\",\"Sumbawa besar\",\"boak unter iwes\",\"boak,20 januari 2000\",\"085238926271\",\"Hasmarita2001@gmail.com\",\"Travelling\",\"2,78\",\"Tidak\",\"tidak punya beasiswa\",\"Sudah\",\"M\",\"belum\",\"belum\",\"belum\",\"belum\",\"tidak ada\",\"olahraga\",\"volly\",\"tidak ada\",\"tidak ada\",\"Tidak ada\"],[\"Yogi febriansyah\",\"Laki laki\",\"19.01.014.007\",\"T. Elektro\",\"A\",\"2019\",\"Sumbawa\",\"Sering\",\"Mapin beru,20 maret 2001\",\"082340718233\",\"yogi.xltkj@gmail.com\",\"Main bola\",\"0,00\",\"Ya\",\"Beasiswa uts\",\"Sudah\",\"L\",\"Belum\",\"Beoum\",\"Belum\",\"Belum\",\"PKM\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Uzlifatul Jannah Hamid\",\"Perempuan\",\"18.01.016.052\",\"Teknik Sipil\",\"A\",\"2018\",\"Nusa Tenggara Timur\",\"Perumahan grahasatelit\",\"Baranusa 7 Juli 2000\",\"082339667774\",\"uzli0707@gmail.com\",\"Mengaji dan tilawah\",\"2.87\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Perlombaan syiar membumikan Al-Qur\'an\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Nurul Azmi\",\"Perempuan\",\"19.01.013.042\",\"Teknik Informatika\",\"C\",\"2019\",\"Sumbawa Besar\",\"Dusun Pamulung RT 02 RW 09\",\"Pamulung, 02 Agustus 2001\",\"085238149991\",\"nr.azmi02\",\"Membaca\",\"0.00\",\"Ya\",\"Beasiswa UTS\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Seni\",\"Tari, musik\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Aditya Bagus Sasmito\",\"Laki-Laki\",\"17.01.071.004\",\"Teknik Informatika\",\"TI A\",\"2017\",\"Sumbawa Besar\",\"Jln. Diponegoro belakang toko sepatu stars kel.bugis kec. Seketeng, Sumbawa Besar, NTB\",\"Sumbawa, 31 Juli 1998\",\"081236101945\",\"adityabagus70@gmail.com\",\"Menyanyi dan Baca Buku\",\"3.22\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XXL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Seni\",\"Bernyanyi\",\"Bernyanyi\",\"Bernyanyi\",\"Tidak Ada\"],[\"Evi Nurmala\",\"Perempuan\",\"17.01.071.029\",\"Informatika\",\"A\",\"2017\",\"Maronge\",\"Sering\",\"Maronge, 13 maret 1999\",\"085205871610\",\"vhy.evhy.nurmala@gmail.com\",\"Menulis\",\"3.20\",\"Ya\",\"Beasiswa\",\"Sudah\",\"s\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Banyak, semuanya\",\"Seni dan olahraga juga\",\"Bulu tangkis\",\"Seni dan olahraga\",\"Tari\",\"Belum,\"],[\"Aldi pranata\",\"Laki-laki\",\"17.01.071.008\",\"Teknik Informatika\",\"A\",\"2017\",\"Sumbawa\",\"Sumbawa\",\"Lape 7 mei 1997\",\"+6287857776706\",\"aldi.pra75@gmail.com\",\"Main musik\",\"3.28\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Seni dan olahraga\",\"Gitar dan sepak bola\",\"Seni dan olahraga\",\"Gitar dan sepak bola\",\"Tidak ada\"],[\"Andriansyah\",\"Laki - Laki\",\"17.01.071.010\",\"Teknik Informatika\",\"A\",\"2017\",\"Sumbawa\",\"Jln. Lintas Sumbawa - Bima Km 3, Samapuin, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Gapit, 28 April 1998\",\"082342117068\",\"blckbrd123@gmail.com\",\"Game, musik, traveling, komputer.\",\"3,19\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Musik, desain\",\"Olahraga\",\"Fitnes\",\"Tidak ada\"],[\"Baharuddin Muda\",\"Laki-laki\",\"17.01.071.018\",\"Teknik Informatika\",\"A\",\"2017\",\"Flores Timur\",\"Dusun Batu Alang, Desa Leseng, Kec. Moyo Hulu, Kab. Sumbawa Besar, NTB\",\"Samarinda, 17 September 1996\",\"082247222187\",\"Bahar.muda96@bmail.com\",\"Membaca\",\"2,87\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif\",\"Tidak ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"Dika Hamdayan\",\"Laki-laki\",\"17.01.071.025\",\"Informatika\",\"A\",\"2017\",\"Sumbawa barat\",\"jln.datu Arong, des.pungka, Sumbawa, Sumbawa besar, Nusa tenggara barat\",\"Sumbawa, 15 Mei 1999\",\"085205317217\",\"dikdikahamdayan15@gmail.com\",\"Renang, pencak silat, traveling\",\"3,10\",\"Ya\",\"Bidikmisi\\/samawa\",\"Belum\",\"L\",\"Belum\",\"Belum\",\"Pernah\",\"Belum\",\"Program hibah bina desa\",\"Olahraga\",\"Renang\",\"Olahraga\",\"Pencak silat\",\"Juara 2 pencak silat tingkat kabupaten-2016\"],[\"Brenny prasetyo waty\",\"Perempuan\",\"17.01.071.029\",\"Teknik informatika\",\"A\",\"3017\",\"Aceh tenggara\",\"\\u201cJln.Kutacane Medan,Ds Biak muli,Kec.Bamb,Kab.Aceh tenggara,prof. Nanggroe Aceh Darussalam\",\"Biak muli 04 Desember 1998\",\"081263372219\",\"Rennyprasetyo04@gmail.com\",\"Travelling\",\"3.08\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belumprogram\",\"Program hibah bina desa\",\"Seni\",\"Tari\",\"Seni\",\"Tari\",\"Juara 1 lomba tari sepesantre\"],[\"Muh. Naufal Rifchi Awaluddien\",\"Laki-Laki\",\"18.01.016.045\",\"Teknik Sipil\",\"B\",\"2018\",\"Sulawesi Tengah\",\"Jln. Gunung setia, Brang Biji, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Palu, 23 Juli 1999\",\"081354753544\",\"Mhammadnoval786@gmail.com\",\"Futsal, Menggambar, Nonton Film\",\"2,63\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Olahraga\",\"Futsal\",\"Seni\",\"Menggambar\",\"Tidak Ada\"],[\"Elga Ramdani\",\"Laki-laki\",\"17.01.071.027\",\"Informatika\",\"A\",\"2017\",\"Sumbawa\",\"Brang biji\",\"Sumbawa 2 Januari 1999\",\"082342178659\",\"elgaramdani99@gmail.com\",\"Football\",\"3.18\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah Bina Desa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak Ada\"],[\"Ismail Hamzah\",\"Laki-laki\",\"17.01.011.020\",\"Teknik metalurgi\",\"A B\",\"2017\",\"Jawa tengah\",\"Graha satelit\",\"Bandung, 31 maret 1999\",\"082134085053\",\"Ismail.hamz31@gmail.com\",\"Badminton\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Sudah\",\"Pernah\",\"Pernah\",\"Belum\",\"PKM\",\"Olahraga\",\"Badminton\",\"Olahraga\",\"Badminton\",\"Juara 1 taekwondo\"],[\"Sahril Rahim\",\"laki-laki\",\"17.01.011.047\",\"Teknik Metalurgi\",\"B\",\"2017\",\"Sulawesi Tenggara\",\"Masjid kampus UTS\",\"Tolihe,06-07-1998\",\"082396246553\",\"Sahrilrahim7@gmail.com\",\"Traveling\",\"3.30\",\"iya\",\"Bidikmisi\",\"iya\",\"L\",\"Sudah\",\"belum\",\"belum\",\"belum\",\"PkM\",\"olahraga\",\"Futsal\",\"tidak ada\",\"tidak ada\",\"tidak ada\"],[\"Muh. Ardin sahar\",\"Pria\",\"17.01.011.029\",\"Teknik Metalurgi\",\"Semester 5 kelas B\",\"2017\",\"Kalimantan Utara\",\"BTN PPN BUKIT PERMAI\",\"Bone, 28 Januari 1999\",\"+6281330785150\",\"muhammadardinsahar211013@gmail.com\",\"Traveling\",\"3.49\",\"Ya\",\"Bidik Misi\",\"Belum\",\"L\",\"Sudah\",\"Belum\",\"Belum\",\"Pernah\",\"Karya Tulis\",\"Olahraga\",\"Volly, Futsal, dan Bulu Tangkis\",\"Olahraga\",\"Volly, Futsal dan Bulu Tangkis\",\"Tidak Ada\"],[\"Yeni Rahmawati\",\"Perempuan\",\"17.01.071.125\",\"Informatika\",\"C\",\"2017\",\"Jawa Tengah\",\"BTN Bukit Permai blok.p no.14\",\"Batang, 17 Maret 1999\",\"089612445680\",\"yenira1999@gmail.com\",\"Travelling\",\"3,18\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Pernah\",\"Belum\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Seni\",\"Nyanyi\",\"Tidak ada\"],[\"Muhammad Ridwan\",\"Laki-laki\",\"18.01.016.047\",\"Teknik Informatika\",\"B\",\"2018\",\"Aceh\",\"Desa boak\",\"Panton pawoh,16 April 1999\",\"081263710799\",\"Mr7948700@hmail.com\",\"Futsal\",\"2,75\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Dhia Eartha Hanif\",\"Laki laki\",\"17.01.071.024\",\"Informatika\",\"A\",\"2017\",\"Kota Bogor Jawa Barat\",\"Jl. Bypass, Sering Desa Jorok, Unter Iwes, Sumbawa Besar, NTB\",\"Bogor, 14 April 1999\",\"085333137286\",\"hanif.dhiaeartha14@gmail.com\",\"Baca novel, main game, komputer, traveling\",\"3.39\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belom\",\"Belum\",\"Belum\",\"Program hibah bina desa\",\"Olahraga\",\"Futsal, Taekwondo\",\"Olahraga\",\"Tidak ada\",\"Tidak ada\"],[\"Muzdalifah\",\"Perempuan\",\"17.01.011.035\",\"Teknik Metalurgi\",\"B\",\"2017\",\"Sumatera Utara\",\"Desa Boak\",\"Sukabumi, 17 Desember 1998\",\"082274188073\",\"ifah1798@gmail.com\",\"Travelling\",\"3,21\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Sudah\",\"Belum\",\"Belum\",\"Pernah\",\"Karya Tulis\",\"Seni\",\"Drawing\",\"Seni\",\"Drawing\",\"Juara 1 Melukis tingkat kabupaten-2010, Juara 3 Lomba Kaligrafi tingkat Kabupaten-2014\"],[\"Asmawati\",\"Perempuan\",\"18.01.016.017\",\"Teknik sipil\",\"A\",\"2018\",\"Nusa tenggara barat\",\"Boak\",\"Boak, 23 September 2000\",\"085338516756\",\"asmawati23092000@gmail.com\",\"Membaca\",\"2,84\",\"Ya\",\"Bidikmisi\",\"Belum\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Progr Hibah bina desa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Rangga Ade Malinno\",\"Laki-laki\",\"18.01.016.019\",\"Teknik Sipil\",\"A\",\"2018\",\"Sumbawa\",\"Jalan Garuda no 136, Lempeh\",\"Dompu, 13 Mei 2000\",\"083189903594\",\"ranggamalino99@gmail.com\",\"Bernyanyi\",\"3,18\",\"Ya\",\"Tau Samawa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Bermusik\",\"Seni\",\"Bermusik\",\"Tidak ada\"],[\"Aldiansyah\",\"Laki-laki\",\"19.01.013.013\",\"Teknik informatika\",\"A\",\"2019\",\"Sumbawa Barat\",\"Jln hasanuddin, kampung bugis, Sumbawa Besar, Nusa, Tenggara Barat\",\"Seteluk, 15 Maret 2001\",\"082341790810\",\"Aldiansyahshippuden933@gmail.com\",\"Menggambar, vollyball\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Turnamen vollyball putra yg diadakan oleh kampus\",\"Olahraga\",\"Vollyball\",\"Olahraga\",\"Bermain volly\",\"Belum\"],[\"Syahrul Ramadhan\",\"Laki-laki\",\"19.01.013.038\",\"Teknik informatika\",\"D\",\"2019\",\"Dompu\",\"Balibunga-Kandai II\",\"Dompu, 19 November 2001\",\"087759633309\",\"syahrul.ramadhanxl@gmail.com\",\"Komputer\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreativitas mahasiswa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Nurul Maulida Solihat\",\"Perempuan\",\"17.01.071.088\",\"Informatika\",\"C\",\"2017\",\"Bogor\",\"Asrama UTS\",\"Bogor, 30 Juni 1998\",\"081385876824\",\"nurulmaulidasolihat@gmail.com\",\"Menghayal\",\"3.43\",\"Ya\",\"Nusantara\",\"Sudah\",\"L\",\"Tidak\",\"Belum\",\"Belum\",\"Belum\",\"PKM\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak\",\"Tidak\",\"Tidak\"],[\"Muhammad Yusri\",\"Laki laki\",\"19.01.011.042\",\"Tekink Metalurgi\",\"Semester 1\",\"2019\",\"Kalimantan utara\",\"Brang bara\",\"Nunukan\",\"08225151841\",\"Yusrisaniman4@gmail.com\",\"Main gitar Dan menyanyi\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Penginputan seni\",\"Futsal Dan gitar\",\"Seni\\/Olahraga\",\"Gitar\",\"Tidak ada\"],[\"Ari Kurniawan\",\"Laki-Laki\",\"18.01.014.033\",\"Teknik Elektro\",\"-\",\"2018\",\"Kalimantan Utara\",\"Batu Alang\",\"Tarakan, 12 Maret 2000\",\"085348105633\",\"arikurniawan046@gmail.com\",\"Memanah\",\"2,85\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Program Hibah Bina Desa\",\"Olahraga\",\"Memanah\",\"Olahraga\",\"Memanah\",\"Belum\"],[\"Ananda Bakti Darmawan\",\"Laki-laki\",\"17.01.071.009\",\"Teknik Informatika\",\"A\",\"2017\",\"Sumbawa Besar\",\"Brang Bara belakang kelinik Lawang gali\",\"Sumbawa 30 Mei 1999\",\"082341212814\",\"anandabakti305@gmail.com\",\"Modifikasi\",\"2,74\",\"Ya\",\"Bidikmisi\",\"Belum\",\"Xl\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Modifikasi\",\"Seni\",\"Modifikasi\",\"Tidak ada\"],[\"Adrian Julian Pratama\",\"Laki-Laki\",\"17.01.071.006\",\"Teknik Informatika\",\"A\",\"2017\",\"Sumbawa\",\"Jln.lintas kebayan,gg pramuka no 8\",\"Ropang,12 Juni 1998\",\"081353698188\",\"ryanadrian230@gmail.com\",\"Traveling\",\"2,91\",\"Ya\",\"Bidikmisi\",\"BELUM\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Lazarus\",\"Laki-laki\",\"16.01.071.056\",\"Teknik Informatika\",\"B\",\"2016\",\"Riau\",\"BTN Bukti Permai, Sumbawa Besar, Nusa Tenggara Barat\",\"Bengkalis, 24 Agustus 1998\",\"085265830802\",\"lazarus.uts@gmail.com\",\"Main Catur\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Main Catur, PKM, PHBD\",\"Olahraga\",\"Catur\",\"Olahraga\",\"Catur\",\"Juara 1 Catur Mall Taman Palem\"],[\"Taufiq Al Muhadzdzib\",\"Laki-Laki\",\"16.01.011.034\",\"Teknik Metalurgi\",\"A\",\"2016\",\"Jawa Timur\",\"PPN Bukit Indah,  Kelurahan Seketeng, Kecamatan Sumbawa,  Kab. Sumbawa Besar\",\"Madiun,  05 April 1998\",\"082339903929\",\"almuhadzdzib5498@gmail.com\",\"Olahraga (Jogging,  Futsal)\",\"3.66\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Sudah\",\"Pernah\",\"Belum\",\"Belum\",\"Pekan Kreatifitas Mahasiswa\",\"Olahraga\",\"Atletik (Lari)\",\"Olahraga\",\"Bola Volly\",\"Juara 3 Lari 400m Tingkat Provinsi Jawa Timur-2015\"],[\"Babul salam\",\"Laki laki\",\"17.01.071.017\",\"Informatika\",\"A\",\"2017\",\"Kalimantan utara\",\"samapuin\",\"Nunukan,20 maret 1999\",\"082250707475\",\"-\",\"-\",\"-\",\"Iya\",\"bidikmisi\",\"tidak\",\"L\",\"belum\",\"belum\",\"belum\",\"Belum\",\"tidak ada\",\"seni\",\"tidak ada\",\"tidak ada\",\"tidak ada\",\"tidak\"],[\"Ari Syahwatullah\",\"Laki-laki\",\"17.01.071.013\",\"Teknik Informatika\",\"A\",\"2017\",\"Sumbawa\",\"Jln.olat Maras,Batualang,Sumbawa,Nusa Tenggara Barat\",\"Lab.Terata, 25 Januari 1999\",\"085333588568\",\"arisyahwatullah11@gmail.com\",\"Bulutangkis\",\"3,11\",\"Ya\",\"Bidikmisi\",\"Belum\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Olahraga\",\"Bulutangkis\",\"Olahraga\",\"Bulutangkis\",\"Tidak Ada\"],[\"Aldiansyah\",\"Laki-laki\",\"19.01.013.013\",\"Teknik informatika\",\"A\",\"2019\",\"Sumbawa Barat\",\"Jln hasanuddin, kampung bugis, Sumbawa Besar, Nusa, Tenggara Barat\",\"Seteluk, 15 Maret 2001\",\"082341790810\",\"Aldiansyahshippuden933@gmail.com\",\"Menggambar, vollyball\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Turnamen vollyball putra yg diadakan oleh kampus\",\"Olahraga\",\"Vollyball\",\"Olahraga\",\"Bermain volly\",\"Belum\"],[\"Arjuna Ramadhan\",\"Laki-Laki\",\"19.01.013.081\",\"Teknik Informatika\",\"B\",\"2019\",\"Nusa Tenggara Barat\",\"Jln. Sudirman No.13 Brang Bara, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Sumbawa, 14 Desember 2000\",\"082340736747\",\"sandmanmctavish@gmail.com\",\"Komputer\",\"0.00\",\"Ya\",\"Samawa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Olahraga\",\"Futsal\",\"Tidak Ada\",\"Tidak Ada\",\"Tidak Ada\"],[\"Jasmawati\",\"perempuan\",\"16.01.071.051\",\"Teknik Infotmatika\",\"A\",\"2016\",\"NTT\",\"Dusun pernek beru rt 01 rw 07 desa pernek moyo hulu kab. sumbawa nusa tenggara barat\",\"Wuring, 30 Desember 1997\",\"082359588258\",\"jasmawaty460@gmail.com\",\"Travelibg, berenang,\",\"3,64\",\"Ya\",\"Nusantara\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"program hibah bina desa\",\"Olahraga\",\"Bola kaki\",\"tidak ada\",\"tidak ada\",\"tidak ada\"],[\"Bayu Anggoro Wibisono\",\"Laki-laki\",\"17.01.072.004\",\"Teknik elektro\",\"-\",\"2017\",\"Batang\",\"Jl.sumbawa-bima, km-5, perum graha satelet, gang 4, blok B15, sumbawa.\",\"Batang,25 mei 1999\",\"085200141869\",\"anggarab161@gmail.com\",\"Traveling\",\"2.84\",\"Ya\",\"Bidikmisi\",\"Belum\",\"Xl\",\"Belum\",\"Pernah\",\"Belum\",\"Belum\",\"Pkm\",\"Seni\",\"Seni melukis\",\"olahraga\",\"Futsal\",\"Juara 3 seni keria tingkat kota-2016, juara 2 sepakbola tingkat kota-2014\"],[\"Aprian Clara Julistian\",\"Laki laki\",\"19.01.013.082\",\"Teknik Informatika\",\"A\",\"2019\",\"Sumbawa\",\"Jln. Sumbawa-Ropang, Lantung, Lantung, Sumbawa Besar, Nusa Tenggara Barat\",\"Lantung, 24 Juli 2001\",\"087851005610\",\"Julistianjulistian@gmail.com\",\"Olahraga\",\"0,00\",\"Ya\",\"Samawa\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Futsa\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Nendi Johana\",\"Laki-laki\",\"16.01.073.020\",\"Teknik Sipil\",\"A\",\"2016\",\"Bekasi, Jawa Barat\",\"BTN bukit permai, blok B\",\"Bekasi, 01 Juli 1998\",\"085239415741\",\"nendi.johana17@gmail.com\",\"Futsal, Traveling,\",\"2,80\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belem\",\"Belum\",\"Belum\",\"Belum\",\"Kemanusiaan\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Belum\"],[\"Syahrul Ardiansyah\",\"Laki-Laki\",\"17.01.013.025\",\"Teknik industri\",\"A\",\"2017\",\"Kalimantan Utara\",\"BTN BUKIT PERMAI SAMPING BLOK AB\",\"Sebatik, 09 September 1999\",\"081343782945\",\"syahrularsyad99@gmail.com\",\"Futsal, gamers\",\"3.33\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"PKM\",\"Olahraga\",\"Tenis meja\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Renaldy\",\"Laki laki\",\"19.01.011.029\",\"Teknik metalurgi\",\"Metalurgi b\",\"2019\",\"Kalimantan utara\",\"Samapuin\",\"Tarakan 18 februari 1998\",\"081243945552\",\"Renalsagoy@gmail.com\",\"Seni budaya kuda lumping\",\"0.00\",\"Iya\",\"Beasiswa nusantara\",\"Sudah\",\"Xl\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program hiba bina desa\",\"Seni\",\"Kuda lumping\",\"Seni\",\"Seni nari dan marchijg band\",\"Mwnjadi pelatih marching band\"],[\"ardiansyah putra\",\"laki-laki\",\"16.01.071.016\",\"Teknik Informatika\",\"A\",\"2016\",\"Suumbawa\",\"Uma Sima, Sumbawa Besar, Nusa Tenggara Barat\",\"Gapit, 16 januari 1998\",\"082266422191\",\"xcz.ardiansyahputra2468@gmail.com\",\"Coding, Nyantai, Ngegame, Main Bola.\",\"3.08\",\"Tidak\",\"Tidak\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Project IT (Ngoding), Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Olahraga\",\"Olahraga\",\"Main bola, Voli.\",\"Tidak ada\"],[\"M. Syarif Afandy\",\"Laki-laki\",\"18.01.016.022\",\"Teknik Sipil\",\"SPL-3A\",\"2018\",\"Sumbawa\",\"Jalan osap sio nomor 25 kelurahan umasima\",\"Sumbawa , 26 Juli 2000\",\"082147373628\",\"ivanafandy15@gmail.com\",\"Futsal\",\"3.02\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Tilawah Al-Qur\'an\",\"Seni\",\"Tilawah Al-Qur\'an\",\"Juara 1 MTQ TK. Kabupaten Sumbawa tahun 2017\"],[\"Meri Anjarsari\",\"Perempuan\",\"19.01.013.101\",\"Teknik informatika\",\"Informatika c\",\"2019\",\"Osap sio\",\"Dusun batu praga\",\"Lape,29 Maret 2001\",\"082340826970\",\"merianjarsari05@gmail.com\",\"Belajar\",\"0,00\",\"Beasiswa grade 3\",\"Tidak punya\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Rovita Indah Sukma\",\"Perempuan\",\"19.01.011.006\",\"Teknik Metalurgi\",\"A\",\"2019\",\"Sumbawa Besar\",\"Desa Batu Alang, Moyo Hulu, Sumbawa Besar, Nusa Tenggara Barat\",\"Lunyuk, 14 September 2001\",\"087854563908\",\"Vitaindahsukma@gmail.com\",\"Membaca\",\"0.00\",\"Ya\",\"Samawa\",\"Sudah\",\"S\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Tidak ada\",\"Seni\",\"Menari\",\"Seni\",\"Menari\",\"Seni\"],[\"Bambang wansa putra\",\"Laki laki\",\"18.01.016.015\",\"Teknik sipil\",\"A\",\"2018\",\"Sumbawa\",\"Jln. Hasanuddin. Kampung bugia karang bage\",\"17 desember 1998\",\"08525333026 \\/ 082340477787\",\"bambangwansaputra157@gmail.com\",\"Main futsal\",\"3.10\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah bina desa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Mimin Minarni\",\"Perempuan\",\"18.01.013.080\",\"Teknik Informatika\",\"C\",\"2018\",\"Nusa Tenggara Timur\",\"Dusun.Batu Alang ,Desa.Leseng, Sumbawa Besar, Nusa Tenggara Barat\",\"Ende, 05 Agustus 2000\",\"082144055115\",\"minarnimimin0508@gmail.com\",\"Membaca\",\"3.00\",\"Ya\",\"Bidikmidi\",\"Sudah\",\"M\",\"Belum\",\"Pernah\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Rasdiati\",\"Perempuan\",\"18.01.016.048\",\"Teknik Sipil\",\"Sipil B\",\"2018\",\"Wakatobi, Sulawesi Tenggara\",\"Batu Alang\",\"Woua, 30 Agustus 2000\",\"082346276397\",\"Rasdiati41@gmail.com\",\"Membaca, Traveling\",\"2.79\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"Xl\",\"Belum\",\"Pernah\",\"Belum\",\"Belum\",\"PKM\",\"Olahraga\",\"Bulu Tangkis\",\"Olah raga\",\"Bulu tangkis\",\"Tidak ada\"],[\"ROSITA\",\"PEREMPUAN\",\"18.01.016.008\",\"TEKNIK SIPIL\",\"A\\/B\",\"2018\",\"SUMBAWA\",\"SUMBAWA\",\"SUMBAWA,01 JANUARI 2000\",\"085237908694\",\"rositagunwan2000@gmail.com\",\"baca buku\",\"2.95\",\"tidak\",\"tidak berbeasiswa\",\"sudah\",\"N\",\"BELUM\",\"BELUM\",\"PERNAH\",\"BELUM\",\"PROGRAM HIBAH BINA DESA\",\"OLAHRAGA\",\"VOLI,ATLETIK\",\"OLAHRAGA\",\"DI BIDANG ATLETIK\",\"JUARA 1 TINGKAT KABUPATEN- 2018,JUARA TINGKAT PROVINSI-2018,JUARA 3 TINGKAT NASIONAL-2019\"],[\"ARIF FAJAR ISNAN\",\"Laki laki\",\"18.01.016.020\",\"Teknik sipil\",\"A\",\"2018\",\"Sumbawa\",\"Lempeh\",\"Sumbawa,31-01-2000\",\"085338760939\",\"Af5237391\",\"Olahraga Basket ball\",\"3.20\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Olahraga\",\"Basket ball\",\"Olahraga\",\"Basket ball\",\"Juara 2 lomba basket tingkat kota - 2018\"],[\"Muhammad Yusuf Karim\",\"Laki-laki\",\"19.01.014.034\",\"Teknik Elektro\",\"B\",\"2019\",\"Serang, Banten\",\"Jl. Raya Olat Maras, Batu Alang, Moyo Hulu, Pernek, Moyohulu, Kabupaten Sumbawa, Nusa Tenggara Bar. 84371\",\"Serang, 09 Februari 2001\",\"082340680279\",\"muhammadyusufkarim42@gmail.com\",\"Bersepeda (travel cycling)\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Bersepeda\",\"Olahraga\",\"Bersepeda\",\"Tidak ada\"],[\"Jeli Ariandi\",\"Laki-laki\",\"18.01.016.011\",\"Teknik Sipil\",\"A\",\"2018\",\"Sumbawa\",\"Dusun Leseng\",\"Lawin, 10 Oktober 2000\",\"082339556048\",\"jeliariandi357@gmail.com\",\"Voli dan Teater\",\"3,31\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"N\",\"Belum\",\"Pernah\",\"Belum\",\"Pernah\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Voli\",\"Seni\",\"Teater\",\"Juara Favorit Seni Teater tingkat kabupaten-2013\"],[\"Maulana Helmi Akbar\",\"Laki - laki\",\"19.01.013.019\",\"Teknik Informatika\",\"C\",\"2019\",\"Nusa Tenggara Barat\",\"Komplek perikanan\",\"Semarang 17 Agustus 2000\",\"082340224880\",\"akbarmaulanahelmi@gmail.com\",\"Bulutangkis, futsal, Sepak bola\",\"0,00\",\"Ya\",\"Grade lll\",\"Ya\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Lomba\",\"Olahraga\",\"Bulutangkis\",\"Ya\",\"Bulutangkis\",\"Tidak ada\"],[\"Nody MarezaFatri Junaidi\",\"Perempuan\",\"19.01.011.049\",\"Teknik Metalurgi\",\"B\",\"2019\",\"Sumbawa Besar\",\"BrangBiji\",\"Sumbawa Besar, 27 maret 2000\",\"082341342790\",\"nodymareza54@gmail.com\",\"Internetan\",\"0,00\",\"Tidak\",\"Tidak Berbeasiswa\",\"Sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"PKM\",\"Seni Teater\",\"Teater\",\"Teater\",\"Teater\",\"Tidak Ada\"],[\"Nursia\",\"perempuan\",\"17.01.073.043\",\"Teknik sipil\",\"A\",\"2017\",\"Kalimantan utara\",\"Bpak luar\",\"Sebatik 07 oktober 1998\",\"081223222421\",\"Nursiamarwan10@gmail.com\",\"Makan\",\"3.28\",\"Ya\",\"bidikmisi\",\"sudah\",\"l\",\"sudah\",\"pernah\",\"belum\",\"belum\",\"tidak ada\",\"seni\",\"Membuat kerajinan tangan\",\"senj\",\"seni\",\"tidak ada\"],[\"Rizgika Pusparini\",\"Perempuan\",\"17.01.071.099\",\"Teknik Informatika\",\"C\",\"2017\",\"Jawa Timur\",\"Gang. Manggis 4, Sumbawa besar\",\"Magetan, 19 Agustus 1998\",\"081353083425\",\"rizgikapuspa@gmail.com\",\"Traveling\",\"3,25\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Basket\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Siti Kalkausar Djafar HS\",\"Perempuan\",\"17.01.071.110\",\"Teknik Informatika\",\"C\",\"2017\",\"NTT\",\"Dusun Batu Alang\",\"Ende, 26 Juni 1996\",\"085333147927\",\"sitikalkausar@gmail.com\",\"Nonton\",\"3.56\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak Ada\",\"Olahraga\",\"Volly\",\"Olahraga\",\"Volly\",\"Tidak ada\"],[\"\\\"Pupung\\\"\",\"\\\"Laki-laki\",\"\\\"16.01.012.020\\\"\",\"\\\"Teknik Mesin\\\"\",\"\\\"A\\\"\",\"\\\"2016\\\"\",\"\\\"Bima, NTB\\\"\",\"\\\"Ppn bukit indah\\\"\",\"\\\"Naru, 24 April 1998\\\"\",\"\\\"082341998978\\\"\",\"\\\"Lapeposumbawa97@gmail.com\",\"\\\"Traveling\\\"\",\"\\\"3.10\\\"\",\"\\\"Iya\\\"\",\"\\\"Bidikmisi\\\"\",\"\\\"Sudah\\\"\",\"\\\"N\\\"\",\"\\\"Sudah\\\"\",\"\\\"Pernah\\\"\",\"\\\"Belum\\\"\",\"\\\"Belum\\\"\",\"\\\"Hibah dana desa\\\"\",\"\\\"Olahraga\\\"\",\"\\\"Naik gunung\\\"\",\"\\\"Olahraga\\\"\",\"\\\"Kuat jalan\\\"\",\"\\\"Juara 1 lomba sepak bola-2011\"],[\"Syukriansyah\",\"Laki-laki\",\"17.01.071.116\",\"Teknik Informatika\",\"C\",\"17\",\"Sumbawa\",\"BTN Bukit Permai Block D no.32\",\"Sumbawa 09-Februari-1999\",\"085333624584\",\"ansyasyukri4799@gmail.com\",\"Jogging\",\"3,15\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"PKM\",\"Olahraga\",\"Volly\",\"Tidak ada\",\"Volly\",\"Tidak ada\"],[\"Annisa Az-zahra\",\"P\",\"17.01.011.008\",\"Teknik Metalurgi\",\"A\",\"2017\",\"Bekasi\",\"Ppn Bukit berlian\",\"Bekasi, 25 agustus 1999\",\"082112576686\",\"annisaazzahra.metallurgist@gmail.com\",\"Tidur\",\"3,75\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Sudah\",\"Belum\",\"Pernah\",\"Belum\",\"PHBD\",\"Ya\",\"Bulutangkis\",\"Iya\",\"Bulutangkis\",\"Nggada wkwk\"],[\"Sulastari\",\"Perempuan\",\"17.01.071.114\",\"Teknik Informatika\",\"C\",\"2017\",\"Sumbawa\",\"Batu alang, kab.Sumbawa,  Kec.moyo hulu,  Nusa Tenggara Barat\",\"Ai Boro,  15 Oktober 1999\",\"085238603840\",\"Sulastarirpl15@gmail.com\",\"Memasak\",\"2,91\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"S\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Liska Della Erlanda\",\"Perempuan\",\"19.01.013.112\",\"Teknik Informatika\",\"B\",\"2019\",\"Sumbawa\",\"Jln Ki Hajar Dewantara, Gang.Tembus, Palapa,Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Sumbawa, 04 Juni 2001\",\"085339283747\",\"liskasumbawa@gmail.com\",\"Membaca\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Octaviani Siregar\",\"Perempuan\",\"18.01.011.031\",\"Teknik Metalurgi\",\"B\",\"2018\",\"sumatera Utara\",\"Perumahan baiti jannati blok L2 no 2\",\"Padangsidimpuan, 13 Oktober 2000\",\"081260007771\",\"Octavianisiregar13@gmail.com\",\"Travelling, basket\",\"3.65\",\"Ya\",\"Nusantara\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pkm\",\"Olahraga\",\"Basket\",\"Olahraga\",\"Basket\",\"Juara 1 se kota padangsidimpuan-2018\"],[\"Rossi Amelia\",\"Perempuan\",\"19.01.011.023\",\"Teknik Metalurgi\",\"A\",\"2019\",\"Sumatera Utara\",\"Jln.Olat Maras Desa Pernek Kec.Moyo Hulu Kab.Sumbawa NTB Asrama UTS\",\"Padangsidimpuan, 05 Maret 2000\",\"082267759909\",\"rossiamelia0503@gmail.com\",\"Traveling,Kuliner,Membaca,Modeling\",\"0.00\",\"Ya\",\"Nusantara\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah Bina Desa\",\"Seni\",\"Tari,Fashionshow,Modeling\",\"Seni\",\"Tari,fashionshow,modeling\",\"Seni\"],[\"Rossi Amelia\",\"Perempuan\",\"19.01.011.023\",\"Teknik Metalurgi\",\"A\",\"2019\",\"Sumatera Utara\",\"Jln.Olat Maras Desa Pernek Kec.Moyo Hulu Kab.Sumbawa NTB Asrama UTS\",\"Padangsidimpuan, 05 Maret 2000\",\"082267759909\",\"rossiamelia0503@gmail.com\",\"Traveling,Kuliner,Membaca,Modeling\",\"0.00\",\"Ya\",\"Nusantara\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah Bina Desa\",\"Seni\",\"Tari,Fashionshow,Modeling\",\"Seni\",\"Tari,fashionshow,modeling\",\"Seni\"],[\"Arya fahriansyah\",\"Laki laki\",\"19.01.011.010\",\"Teknik Metalurgi\",\"A\",\"2019\",\"Taliwang\",\"Taliwang, jln. Brang rea\",\"Taliwang, 1 Agustus 2000\",\"082341201470\",\"Aryafah01@gmail.com\",\"menggambar\",\"0,00\",\"Tidak\",\"tidak berbeasiswa\",\"sudah\",\"XL\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"seni\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"tidak ada\"],[\"Syahril\",\"Laki-Laki\",\"17.01.072.014\",\"Teknik Elektro\",\"A\",\"2017\",\"Sumbawa\",\"RT 08 RW 03 Desa Boak B\",\"Boak, 13 April 1998\",\"082340574562\",\"Arilsumbawa2019@gmail.com\",\"NgGames\",\"2.75\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"Xl\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program Hibah Bina Desa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Aprizal Rizki\",\"Laki-laki\",\"19.01.014.001\",\"Teknik elektro\",\"A\",\"2019\",\"Kabupaten Sumbawa\",\"Jln kerato, gang masjid An-Nur, kerato, unter iwes, Sumbawa besar, Nusa tenggara barat\",\"Empang, 10 April 2001\",\"085338768077\",\"aprizalrizki89@gmail.com\",\"Main bola, silat, mancing\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Program hibah bina desa\",\"Olahraga\",\"Pencak silat\",\"Olahraga\",\"Pencak silat\",\"Tidak\"],[\"Duwi Kartiniaprilia\",\"Perempuan\",\"19.01.013.103\",\"Teknik Informatika\",\"A\",\"2019\",\"Sumbawa Besar\",\"Sering, Desa Kerato. Kecamatan Unter iwes, Sumbawa Besar, Nusa Tenggara Barat\",\"Jurumapin, 21 April 2000\",\"081237444017\",\"Dwikartiniap@gmail.com\",\"Membaca\",\"0,00\",\"Ya\",\"UTS\",\"Sudah\",\"S\",\"Sudah\",\"Belum\",\"Belum\",\"Pernah\",\"Program Hibah Bina Desa\",\"Seni\",\"Menyanyi\",\"Seni\",\"Menyanyi\",\"Tidak ada\"],[\"Malik Fajar Fatoni\",\"Laki-laki\",\"19.01.011.039\",\"Teknik Metalurgi\",\"B\",\"2019\",\"Sumatera Utara\",\"Asrama uts\",\"Padangsidimpuan,19 November 2001\",\"081248965265\",\"malikfajarfatoni@gmail.com\",\"Catur\",\"-\",\"Ya\",\"Nusantara\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Menggambar\",\"Seni\",\"Seni\",\"Tidak ada\"],[\"Amriadi\",\"Laki - laki\",\"19.01.012.003\",\"Teknik mesin\",\"Kelas mesin A\",\"2019\",\"Pulau medang\",\"Kali baru\",\"Bugis medang 25 oktober 2019\",\"082340130874\",\"Amriadi@gmail.com\",\"Main bola \\/ futsal\",\"-\",\"Gread 3\",\"Beasiswa\",\"Sudah\",\"M\",\"Belum\",\"-\",\"-\",\"-\",\"Olahraga\",\"Iya\",\"Futsal\",\"Iya\",\"Juara 3 futsal antara jurusan\",\"Pernah\"],[\"Ariansyah\",\"Laki laki\",\"17.01.071.014\",\"Informatika\",\"A\",\"2017\",\"Plampang\",\"Gang wortel.brang biji, Sumbawa\",\"Muer, 02 Juli 1997\",\"081337351973\",\"ariansyah0271234@gmail.com\",\"Football\",\"0,00\",\"Tidak\",\"Tidak\",\"Sudah\",\"Xl\",\"Belum\",\"Pernah\",\"Pernah\",\"Pernah\",\"Tidak ada\",\"Olahraga\",\"Lari sore,futsal\",\"Olahraga\",\"Futsal\",\"Tidak\"],[\"Firman al barqah\",\"Laki - Laki\",\"17.01.072.006\",\"Teknik Elektro\",\"A\",\"2017\",\"Sumbawa besar\",\"Desa Semamung, RT 010 RW 05\",\"Semamung, 06 september 1999\",\"085337346073\",\"al.barqah69@gmail.com\",\"Futsal\",\"2,98\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Pernah\",\"Belum\",\"Belun\",\"Pekan kreatif mahasiswa\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Tidak ada\"],[\"Suryani\",\"Perempuan\",\"18.01.015.022\",\"Teknik Industri\",\"-\",\"2018\",\"Sulawesi Tengah\",\"Btn Green Hills Blok E No 11\",\"Buol,28 oktober 1999\",\"+6282219489904\",\"suryanisumbawa@gmail.com\",\"Menulis sastra,menyanyi,melukis,olahraga\",\"3,42\",\"Iya.tapi dari semester 2 belum cair sampai sekarang\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Pernah\",\"Belum\",\"Pernah\",\"Phbd\",\"Seni\",\"Teater\",\"Seni\",\"Teater\",\"Juara 2 musikalisasi puisi\"],[\"Endah Susilawati\",\"Perempuan\",\"18.01.011.016\",\"Teknik Metalurgi\",\"A\",\"2018\",\"Sumbawa\",\"Dusun Bru Desa Hijrah, Lape, Sumbawa Besar, Nusa Tenggara Barat\",\"Sumbawa, 15 Juli 1998\",\"085338975406\",\"endahsusilawati1407@gmail.com\",\"Membaca\",\"3,27\",\"Ya\",\"Samawa\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Program Hibah Bina Desa\",\"Seni\",\"Teater\",\"Seni\",\"Teater\",\"Pernah\"],[\"Fakhri Muhammad\",\"Laki laki\",\"18.01.012.019\",\"Teknik mesin\",\"A\",\"2018\",\"Bekasi,  jawa barat\",\"Asrama UTS\",\"Jakarta, 27-03-1999\",\"081313065013\",\"Fakhrimuhammad753@gmail.com\",\"Menghafal\",\"2.80\",\"Iya\",\"Bidik misi\",\"Sudah\",\"Xl\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Olahraga\",\"Badminton\",\"Olahraga\",\"Badminton\",\"Tidak ada\"],[\"Aprilia Yulmiyanti Eka Putri Waja Uje\",\"Perempuan\",\"18.01.014.007\",\"Teknik Elektro\",\"Teknik Elektro\",\"2018\",\"Nusa Tenggara Timur\",\"Batu Alang\",\"Ende,15 April 2001\",\"081239246807\",\"Yulmiyantiaprilia@gmail.com\",\"Nyanyi\",\"3,09\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Seni\",\"Bernyanyi\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"Husnul Khotimah\",\"Perempuan\",\"19.01.011.002\",\"Teknik Metalurgi\",\"A\",\"2019\",\"KSB\",\"Jln. Tongkol, Kampung Irian Bawah, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat\",\"Seteluk, 16 Juni 2001\",\"083192867336\",\"hk917185@gmail.com\",\"Traveling\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan Kreatif Mahasiswa\",\"Olahraga\",\"Catur, badminton, volly, tenis meja\",\"Olahraga\",\"Catur\",\"Juara 1 Lomba Catur di Classmeeting-2018\"],[\"Ade iyan saputra\",\"Laki laki\",\"19.01.016.010\",\"Teknik sipil\",\"Sipil A\",\"2019\",\"Tengke\",\"Dusun tengke\",\"Tengke,16 Juni 2001\",\"082341162489\",\"Adeiyan811@gmail.com\",\"Catur,takraw\",\"0.00\",\"Tidak\",\"Tidak\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Catur atau takraw\",\"Olahraga\",\"Catur atau takraw\",\"Tidak ada\"],[\"Faizatuz Zulfa\",\"Perempuan\",\"19.01.016.024\",\"Teknik sipil\",\"A\",\"2019\",\"Sumbawa\",\"Kampung Irian\",\"Seteluk, 4 Maret 2001\",\"082339687932\",\"faizatuz519@gmail.com\",\"Menggambar\",\"0,00\",\"Ya\",\"UTS\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Seni\",\"Menggambar\",\"Seni\",\"Menggambar\",\"Tidak ada\"],[\"Moh. Fauzy\",\"Laki-laki\",\"17.01.071.070\",\"Teknik informatika\",\"B\",\"17\",\"Sulawesi tengah\",\"ppn bukit permai\",\"Lais 08,maret 1999\",\"082259484240\",\"fauzyuzy658@gmail.com\",\"Badminton, motor, bola\",\"2,63\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Futsal, badminton\",\"Olahraga\",\"Futsal, badminton\",\"Tidak ada\"],[\"Syahrul Maulidin\",\"Laki-laki\",\"19.01.012.051\",\"Teknik mesin\",\"B\",\"2019\",\"Sumbawa\",\"RT 0:2 RW 0:1 nb desa kerekeh kecamatan unter iwis Sumbawa besar\",\"Sumbawa, 03 Juni 2000\",\"085333495924\",\"Maulidinsyahrul86@gemail.com\",\"Renang, gambar,bulu tangkis, dll\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Suda\",\"L\",\"Belom\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kereatif mahasiswa\",\"olahraga\",\"Bulutangkis\",\"Seni\",\"Menggambar\",\"Juara 1 main bola antar RT\"],[\"Daulat Samudra\",\"Laki laki\",\"17.01.073.012\",\"Teknik sipil\",\"A\",\"2017\",\"Sumbawa\",\"Panto daeng residence\",\"Pelita,29 Februari 2000\",\"085238737579\",\"daulat.46.ds@gmail.com\",\"Sepak bola\",\"2,94\",\"Ya\",\"Bidikmisi\",\"Belum\",\"L\",\"Belum\",\"Pernah\",\"Belum\",\"Pernah\",\"Pkm\",\"Olahraga\",\"Futsal\",\"Olahraga\",\"Futsal\",\"Juara 1 futsal\"],[\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\",\"Kontol\'\"],[\"Akbar Algifari\",\"Laki-laki\",\"18.01.013.014\",\"Teknik INFORMATIKA\",\"A\",\"2018\",\"SUMBAWA\",\"MARONGE\",\"SUMBAWA,29 JULI 2000\",\"081249746802\",\"akbaralgi33@gmail.com\",\"Cipta lagu\",\"2,70\",\"Iya\",\"Tau samawa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Musik atau kesenian\",\"Seni\",\"Pencipta lagu,nyanyi,maen gitar\",\"Seni\",\"Cipta lagu\",\"Selalu ikut lomba musik,tapi go pernah juara\"],[\"Sukmawati\",\"Perempuan\",\"16.01.071.089\",\"Informatika\",\"B\",\"2016\",\"Sumbawa\",\"Btn griya idola blok i\\/25\",\"Utan, 3 November 1998\",\"085205011776\",\"Sukmawatinb@gmail.com\",\"Rebahan\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum dong lama banget dah udah mau lulus juga belom punya KTM\",\"Pernah\",\"Belum\",\"Pernah\",\"Tidak ada. Mau fokus skripsi dulu akutu\",\"Seni\",\"Tari tradisional\",\"Seni\",\"Tari tradisional\",\"Peenah\"],[\"Ikhda Qurrata Aini\",\"Perempuan\",\"18.01.013.143\",\"Teknik Informatika\",\"B\",\"2018\",\"KSB\",\"Batu Alang,Sumbawa Besar NTB\",\"Jereweh, 10 Maret 2000\",\"085338524251\",\"ikhdaaini9@gmail.com\",\"Renang, Basket, Nyanyi, Skateboarding,Cipta puisi dan membaca puisi.\",\"3,58\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"PKM\",\"Seni\",\"Cipta puisi dan bernyanyi\",\"Punya\",\"Cipta puisi dan bernyanyi\",\"Juara 3 lomba cipta puisi tingkat kabupaten- 2017\"],[\"Syahrul Maulidin\",\"Laki laki\",\"19.01.012.051\",\"Teknik mesin\",\"B\",\"2019\",\"Sumbawa\",\"Desa kerekeh kecamatan unter iwis Sumbawa besar\",\"Sumbawa 03 Juni 2000\",\"085333495924\",\"maulidinsyahrul86@gemail.com\",\"Menggambar\",\"0,00\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kereatif mahasiswa\",\"Olahraga\",\"Bulutangkis\",\"Seni\",\"Gambar\",\"Juara 1 main bola antar RT\"],[\"Abdullah Azzam\",\"Laki-Laki\",\"17.01.011.056\",\"Teknik Metalurgi\",\"A\",\"2017\",\"Banten\",\"Jl Raya Olat Maras. Desa Pernek. Kec. Moyo Hulu. Sumbawa. Nusa Tenggara Barat\",\"Serang, 12 Oktober 1998\",\"085333036309\",\"Abd.AzzamUTS@gmail.com\",\"Futsal, Olahraga dan Cleaning Service.\",\"3,34\",\"Ya\",\"Bidikmisi\",\"Belum\",\"M\",\"Sudah\",\"Belum\",\"Belum\",\"Belum\",\"Pekan olahraga \\ud83d\\ude02\",\"Olahraga\",\"Futsal, Badminton, dll\",\"Olahraga\",\"Futsal\",\"Juara 3 futsal tingkat provinsi\"],[\"Maulidya Nurhikmawati\",\"Perempuan\",\"18.01.013.078\",\"Informatika\",\"C\",\"2018\",\"Sumbawa\",\"Dusun Pungkit B. Desa Pungkit kecamatan Moyo Utara\",\"Marente, 4 November 1999\",\"085338812074\",\"maulidyanurhikmawati99@gmail.com\",\"Masak\",\"3.59\",\"Tidak\",\"Tidak berbeasiswa\",\"Ada\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"YENI ARIANINGSI\",\"Perempuan\",\"18.01.011.039\",\"Teknik informatika\",\"B\",\"2018\",\"Sumbawa\",\"Mokong\",\"Mokong,08 Juni 2000\",\"082340589693\",\"yeniaryaningsih@gmail.com\",\"Voly\",\"3,33\",\"Ya\",\"Samawa\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah Bina Desa\",\"Seni dan olahraga\",\"Tari dan voli\",\"Voli\",\"Tari\",\"Tidak ada\"],[\"arif fahmi\",\"laki\\\"\",\"19.01.016.008\",\"teknik sipil\",\"A\",\"2019\",\"Dompu\",\"Nijang jalan karato\",\"Dompu 09-97-01\",\"082339691171\",\"Ariffahmi@google.co.lc\\\"\",\"bola\",\"0.00\",\"tidak\",\"tidak biasiswa\",\"sudah\",\"xl\",\"belum\",\"belum\",\"belum\",\"belum\",\"pekan kreatif Mahasiswa\",\"olahraga\",\"suka ikut lomba atau turnamen bola\\/futsal\",\"olahraga\",\"futsal\",\"juara 3 atar kabupaten 2017\"],[\"Ahmad Hammam Arrumi\",\"Laki-Laki\",\"17.01.013.003\",\"Teknik Industri\",\"-\",\"2017\",\"Bekasi\",\"Gang belakang pemadam\",\"Bekasi, 04 September 1997\",\"081328888108\",\"ahmadhamamarrumi@gmail.com\",\"Travelling\",\"3.19\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Pernah\",\"Belum\",\"Tidak ada\",\"Tidak\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\",\"Tidak ada\"],[\"NURMI SANTI\",\"PEREMPUAN\",\"19.01.013.056\",\"INFORMATIKA\",\"C\",\"2019\",\"BIMA\",\"RUNGGU\",\"RUNGGU,01 FEBRUARI 2000\",\"085333942762\",\"nurmisanti7@gmail.com\",\"volly\",\"0.00\",\"ya\",\"grede II\",\"sudah\",\"S\",\"belum\",\"belum\",\"belum\",\"belum\",\"program hibah bina desa\",\"olahraga\",\"olagraga volly\",\"olahraga\",\"Volly\",\"tidak ada\"],[\"Eka etiana\",\"Perempuan\",\"18.01.014.014\",\"Teknik elektro\",\"Elektro\",\"2018\",\"Sulteng\",\"Jln kutilang 3, gang pasak, pekat Sumbawa besar\",\"Tolisu, 05 Juni 2000\",\"085298912706\",\"ekaetiana@gmail.com\",\"Olahraga\",\"2.75\",\"Iya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Pernah\",\"Pkm\",\"Seni\",\"Menari\",\"Seni\",\"Menari atau dance\",\"Juara 3 lomba menari 2013\"],[\"Satria Mandani Saputra\",\"Laki laki\",\"19.01.011.050\",\"Teknik Metalurgi\",\"1B\",\"2019\",\"Sumbawa\",\"Dusun Buin Sepit desa Leseng kecamatan Moyo Hulu, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat.\",\"Talwa A, 17 Maret 2001\",\"081239842136\",\"satriamandani67@gmail.com\",\"Komputer, desain,\",\"0,00\",\"Ya\",\"Beasiswa grade III\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Olahraga\",\"Futsal, catur\",\"Olahraga\",\"Futsal, catur\",\"Tidak ada\"],[\"Nita surahmi\",\"Perempuan\",\"19.01.011.003\",\"Metalurgi\",\"A\",\"2019\",\"Sumbawa\",\"Dusun malili, desa berare kec. Moyo hilir, RT 1 RW, 2\",\"Malili, 6 april 2001\",\"087860843322\",\"Surahminita@gmail.com\",\"Menari\",\"0.00\",\"Tidak\",\"Samawa\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Seni\",\"Menari\",\"Seni\",\"Menari\",\"Pernah\"],[\"Yeni Arianingsi\",\"Perempuan\",\"18.01.011.039\",\"Teknik Metalurgi\",\"B\",\"2018\",\"Sumbawa\",\"Mokong\",\"Mokong,08 Juni 2000\",\"082340589603\",\"yeniaryaningsih@gmail.com\",\"Voli\",\"3,33\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Hibah Bina Desa\",\"Seni\",\"Voli\",\"Olahraga\",\"Tidak ada\",\"Tidak ada\"],[\"Muhamad amirul\",\"Laki laki\",\"17.01.013.014\",\"Teknik industri\",\"Industri\",\"2017\",\"Kalimantan utara\",\"Jln sering, kec. Unter iwes Sumbawa besar\",\"Bone, 16 Januari 2000\",\"082299571274\",\"muhamadamurul815@gmail.com\",\"Olahraga\",\"3.27\",\"Iya\",\"Bidikmisi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pkm\",\"Olahraga\",\"Badminton\",\"Olahraga\",\"Badminton\",\"Tidak ada\"],[\"Adjie Adetiya Pratama\",\"Laki-laki\",\"18.01.013.011\",\"Teknik Informatika\",\"A\",\"2018\",\"Sumbawa\",\"Jln.dam pungka,Gang.datu arong,dusun pungka,desa pungka,kec.unter iwes,sumbawa besar,NTB\",\"SUMBAWA BESAR,06 FEBRUARI 2000\",\"085239068186\",\"Adetiya2362@gmail.com\",\"Olahraga (futsal,basket)\",\"3,26\",\"Ya\",\"Bidik misi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Basket dan futsal\",\"Olahraga\",\"Futsal dan Basket\",\"Juara 3 futsal tingkat siswa se-smp 2014,juara 3 basketball smaniga competition 2015,juara 2 basketball popda 2016\"],[\"Adjie Adetiya Pratama\",\"Laki-laki\",\"18.01.013.011\",\"Teknik Informatika\",\"A\",\"2018\",\"Sumbawa\",\"Jln.dam pungka,Gang.datu arong,dusun pungka,desa pungka,kec.unter iwes,sumbawa besar,NTB\",\"SUMBAWA BESAR,06 FEBRUARI 2000\",\"085239068186\",\"Adetiya2362@gmail.com\",\"Olahraga (futsal,basket)\",\"3,26\",\"Ya\",\"Bidik misi\",\"Sudah\",\"L\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Tidak ada\",\"Olahraga\",\"Basket dan futsal\",\"Olahraga\",\"Futsal dan Basket\",\"Juara 3 futsal tingkat siswa se-smp 2014,juara 3 basketball smaniga competition 2015,juara 2 basketball popda 2016\"],[\"Iqbal maulana\",\"Laki-laki\",\"19.01.011.030\",\"Teknik metalurgi\",\"B\",\"2019\",\"Sumbawa\",\"saketeng\",\"Sumbawa besar, 2 juli 2000\",\"085338613210\",\"Iqbal020700@gmail.com\",\"treveling\",\"0,00\",\"Ya\",\"samawa\",\"sudah\",\"l\",\"belum\",\"pernah\",\"belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"seni\\/olahraga\",\"Futsal\",\"Seni\\/olahraga\",\"Melukis\",\"juara 3 smanikafutsal - 2019\"],[\"Baiq ira dwi Safitri\",\"Perempuan\",\"19.01.016.066\",\"Teknik sipil\",\"B\",\"2019\",\"Sumbawa\",\"Rt.02,Rw.13,desa dete, dusun bukit tinggi,kecamatan lape,sumbawa besar,nusa tenggara barat\",\"Lape,24 september 2000\",\"085337415027\",\"baiqiradwisafitri@gmail.com\",\"Menari,menyanyi,masak\",\"0,00\",\"Tidak\",\"Tidak berbeasiswa\",\"Sudah\",\"N\",\"Belum\",\"Belum\",\"Belum\",\"Belum\",\"Pekan kreatif mahasiswa\",\"Seni\",\"Tari,nyanyi\",\"Seni\",\"Tari,nyayi\",\"Tidak ada\"],[\"Yutista Mawaddah\",\"Perempuan\",\"17.01.071.130\",\"Teknik Informatika\",\"C\",\"2017\",\"Sumbawa Besar\",\"Komplek prikanan rt.01\\/rw.04 Kel.pekat\",\"Sumbawa,5 desember 1997\",\"081237430463\",\"Yutistamawaddah154@gmail.com\",\"Masak\",\"3.20\",\"Ya\",\"Bidikmisi\",\"Sudah\",\"M\",\"Belum\",\"Pernah\",\"Pernah\",\"Tidak\",\"Tidak ada\",\"Olahraga\",\"Olahraga\",\"Olahraga\",\"Olahraga\",\"Iya\"]]');
+/*!40000 ALTER TABLE `form_jawaban` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `mahasiswa`
 --
 
+DROP TABLE IF EXISTS `mahasiswa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `mahasiswa` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `prodi_id` int(10) UNSIGNED DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `prodi_id` int(10) unsigned DEFAULT NULL,
   `nama` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `nim` varchar(13) COLLATE utf8mb4_unicode_ci NOT NULL,
   `no_telp` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -114,105 +167,146 @@ CREATE TABLE `mahasiswa` (
   `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `alamat` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `telegram` tinyint(4) NOT NULL,
-  `edit_by` int(10) UNSIGNED DEFAULT NULL,
+  `edit_by` int(10) unsigned DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mahasiswa_nim_unique` (`nim`),
+  KEY `mahasiswa_prodi_id_foreign` (`prodi_id`),
+  KEY `mahasiswa_edit_by_foreign` (`edit_by`),
+  CONSTRAINT `mahasiswa_edit_by_foreign` FOREIGN KEY (`edit_by`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `mahasiswa_prodi_id_foreign` FOREIGN KEY (`prodi_id`) REFERENCES `prodi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `mahasiswa`
+--
+
+LOCK TABLES `mahasiswa` WRITE;
+/*!40000 ALTER TABLE `mahasiswa` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mahasiswa` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `migrations`
 --
 
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `migrations` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `batch` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `migrations`
 --
 
-INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2019_09_09_135618_create_mahasiswa_table', 1),
-(5, '2019_11_05_134137_create_forms_table', 1);
-
--- --------------------------------------------------------
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(2,'2014_10_12_100000_create_password_resets_table',1),(3,'2019_08_19_000000_create_failed_jobs_table',1),(4,'2019_09_09_135618_create_mahasiswa_table',1),(5,'2019_11_05_134137_create_forms_table',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `posts`
 --
 
+DROP TABLE IF EXISTS `posts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `posts` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `body` varchar(3000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `gambar` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `user_id` int(10) UNSIGNED DEFAULT NULL,
-  `bidang_id` int(10) UNSIGNED DEFAULT NULL,
+  `user_id` int(10) unsigned DEFAULT NULL,
+  `bidang_id` int(10) unsigned DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `posts_user_id_foreign` (`user_id`),
+  KEY `posts_bidang_id_foreign` (`bidang_id`),
+  CONSTRAINT `posts_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `posts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `posts`
+--
+
+LOCK TABLES `posts` WRITE;
+/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+INSERT INTO `posts` VALUES (1,'Website BEM-FT UTS 2019','Assalamualaikum, Alhamdulillah dengan kerja keras dan semangat yang berkobar dari setiap individu pengurus BEM-FT UTS kini website resmi launching, semoga adanya website ini teman2 fakultas teknik tidak ketinggalan info setiap harinya untuk kabar dari Fakultas Teknik maupun Kampus Universitas Teknologi Sumbawa.\r\n\r\n#Pusdatin - Medinfo','1573933605_5dd05225a6faf_Screenshot_2019-11-17-03-43-13-942_com.android.chrome.png',1,1,'2019-11-17 08:46:46','2019-11-25 00:56:54');
+/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `prodi`
 --
 
+DROP TABLE IF EXISTS `prodi`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `prodi` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `nama_prodi` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nama_prodi` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `prodi`
 --
 
-INSERT INTO `prodi` (`id`, `nama_prodi`) VALUES
-(1, 'Teknik Elektro'),
-(2, 'Teknik Industri'),
-(3, 'Teknik Informatika'),
-(4, 'Teknik Metalurgi'),
-(5, 'Teknik Mesin'),
-(6, 'Teknik Sipil');
-
--- --------------------------------------------------------
+LOCK TABLES `prodi` WRITE;
+/*!40000 ALTER TABLE `prodi` DISABLE KEYS */;
+INSERT INTO `prodi` VALUES (1,'Teknik Elektro'),(2,'Teknik Industri'),(3,'Teknik Informatika'),(4,'Teknik Metalurgi'),(5,'Teknik Mesin'),(6,'Teknik Sipil');
+/*!40000 ALTER TABLE `prodi` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `roles`
 --
 
+DROP TABLE IF EXISTS `roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `roles` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `roles` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `roles` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `roles`
 --
 
-INSERT INTO `roles` (`id`, `roles`) VALUES
-(1, 'superadmin'),
-(2, 'admin'),
-(3, 'user');
-
--- --------------------------------------------------------
+LOCK TABLES `roles` WRITE;
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` VALUES (1,'superadmin'),(2,'admin'),(3,'user');
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `bidang_id` int(10) UNSIGNED DEFAULT NULL,
-  `prodi_id` int(10) UNSIGNED DEFAULT NULL,
-  `role_id` int(10) UNSIGNED DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `bidang_id` int(10) unsigned DEFAULT NULL,
+  `prodi_id` int(10) unsigned DEFAULT NULL,
+  `role_id` int(10) unsigned DEFAULT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
@@ -225,216 +319,36 @@ CREATE TABLE `users` (
   `created_by` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_email_unique` (`email`),
+  UNIQUE KEY `users_nim_unique` (`nim`),
+  KEY `users_bidang_id_foreign` (`bidang_id`),
+  KEY `users_prodi_id_foreign` (`prodi_id`),
+  KEY `users_role_id_foreign` (`role_id`),
+  CONSTRAINT `users_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `users_prodi_id_foreign` FOREIGN KEY (`prodi_id`) REFERENCES `prodi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `users_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `bidang_id`, `prodi_id`, `role_id`, `name`, `email`, `email_verified_at`, `password`, `nim`, `angkatan`, `no_telp`, `alamat`, `avatar`, `created_by`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 3, 1, 'Sandy Maulana', 'sandy@google.co.lc', NULL, '$2y$12$KE0r1UOshvtC5OPQEf8S8.S6uuIyLYDZdon7KbIrsOo7adLb3uZLW', '17.01.071.106', '2017', '082260879023', 'Bukit Cimanggu City Blok S11 No.4', NULL, NULL, NULL, '2019-11-04 08:00:00', '2019-11-04 08:00:00'),
-(11, 9, 4, 2, 'Muhammad Farhan Fakhrudin', 'muhammadfarhanfakhrudin@gmail.com', NULL, '$2y$12$HN9DHPNplwrm0r34rdcugetq882xxUtM6BA2bBclxxOHemjyPHz0.', '16.01.011.017', '2016', '085320224447', 'Brang Biji, NTB', NULL, 'Sandy Maulana - MEDINFO', NULL, '2019-11-04 08:00:00', '2019-11-04 08:00:00'),
-(12, 9, 5, 2, 'Trisman Sanjaya', 'andimaslahah@gmail.com', NULL, '$2y$12$iV46ANtujeGonQa.m6zgLujin/KCwaU4FyE6GdpDcaJDigST.q1VG', '17.01.071.102', '2017', '082237080478', 'Pekat', NULL, 'Form_Registrasi', NULL, '2019-11-16 10:14:04', '2019-11-16 10:14:04');
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,1,3,1,'Sandy Maulana','sandy@google.co.lc',NULL,'$2y$12$/8PcYryo9MFfkQowqCJx5.bhTrIqzVpZnfWctJ1GJzFjfU50sIUg.','17.01.071.106','2017','082260879023','Jln. Cendrawasih, Gang.Asdek No.14, Brang Biji, Sumbawa, Sumbawa Besar, Nusa Tenggara Barat',NULL,'Sandy Maulana - MEDINFO',NULL,'2019-11-04 08:00:00','2019-11-17 09:18:50'),(11,9,4,2,'Muhammad Farhan Fakhrudin','muhammadfarhanfakhrudin@gmail.com',NULL,'$2y$12$HN9DHPNplwrm0r34rdcugetq882xxUtM6BA2bBclxxOHemjyPHz0.','16.01.011.017','2016','085320224447','Brang Biji, NTB',NULL,'Sandy Maulana - MEDINFO',NULL,'2019-11-04 08:00:00','2019-11-04 08:00:00'),(15,9,5,2,'Trisman Sanjaya','trismanchibot013@gmail.com',NULL,'$2y$12$Sgb2uuhQWMuxJuzNiJrN1eSgwwDJEnWxcNtepHOE.dvUnwS/QgkTW','17.01.012.023','2017','085237417526','Kukin A kec. Moyo Utara',NULL,'Form_Registrasi',NULL,'2019-11-17 08:49:33','2019-11-17 08:49:33'),(16,10,6,3,'Teguh dwi Jauhari umar','tdwijauhariumar@gmail.com',NULL,'$2y$12$XjjSohc/vMPABf.wE.7gcew0g1z.grJoyEZKXwNUuGuB2RJWK.0s6','18.01.016.030','2018','085238907650','Batu alang',NULL,'Form_Registrasi',NULL,'2019-11-17 10:14:43','2019-11-17 10:14:43'),(17,8,3,3,'Risky Darmawan','riskydarmawanselalu@gmail.com',NULL,'$2y$12$LT5vaRMJwAVPx0qHxoaYEemvqgRvBKc5SDkxBSMRfBTPgFHZz2nTm','17.01.071.101','2017','082251629957','Jalan lintas sumbawa lunyuk, dusun Batu Alang RT 09 desa pernek kec. Moyo Hulu',NULL,'Form_Registrasi',NULL,'2019-11-17 10:33:39','2019-11-17 10:33:39'),(18,1,3,3,'Sukma Asyfinawati','sukmaasyfina@gmail.com',NULL,'$2y$12$pwC5/YqvjFm.GF15a/Bsv.Mt0OSDoSf/1n9NgZjjsXHOYZKFrgiTK','17.01.071.113','2017','085359425620','Samapuin',NULL,'Form_Registrasi',NULL,'2019-11-17 12:21:47','2019-11-17 12:21:47'),(19,9,6,2,'muhyiddin syarief','pangerannyaumi@gmail.com',NULL,'$2y$12$CjrYfok6GKX3Xuodkm5OQOzLXLSLqEmmOHnSeroZx./NCZWjNjJ2.','16.01.073.018','2016','085333623902','pungka',NULL,'Form_Registrasi',NULL,'2019-11-20 16:14:52','2019-11-20 16:14:52'),(20,9,3,2,'Nurul Maulida Solihat','nurulmaulidasolihat@gmail.com',NULL,'$2y$12$UnRR6Dj.FWelaplIZ.8pouSWzUWcECn80.hNQVODpV3NVjxI1gCRi','17.01.071.088','2017','081385876824','Sumbawa Besar',NULL,'Form_Registrasi',NULL,'2019-11-25 00:20:27','2019-11-25 00:20:27'),(21,8,3,2,'EVA RAHMIATI','evarahmiati@gmail.com',NULL,'$2y$12$Kl3sXSbSXuj.bnZIEmraz.IAZU5DJfyxOlrJEwZnKuI1AprIYGYC2','17.01.071.028','2017','082292423662','Desa Pernek,Dusun Batu Alang',NULL,'Sandy Maulana - MEDINFO',NULL,'2019-11-25 00:21:50','2019-11-25 00:35:22'),(22,8,5,3,'Andi Syahril AM','syahrilseimenggaris@gmail.com',NULL,'$2y$12$Uyf3qA5wo/vSu.QaHRPlbuqOO5Q4DDCvTJeTL0etWd1A95fFtkhbm','18.01.012.008','2018','085311401253','Uma sima',NULL,'Form_Registrasi',NULL,'2019-11-25 00:23:47','2019-11-25 00:23:47'),(23,12,3,2,'Yeni Rahmawati','yenira1999@gmail.com',NULL,'$2y$12$JdFtGtdyhNjy8IP.Pg014.TEzqw6Qi.elTlR25QqHOzuvm1TQb/TS','17.01.071.125','2017','089612445680','BTN Bukit Permai blok.P no.14',NULL,'Form_Registrasi',NULL,'2019-11-25 00:26:15','2019-11-25 00:26:15'),(26,8,5,3,'Dzal Aidi Al-Ayyubi','erlizayenni@gmail.com',NULL,'$2y$12$SEAMNRwohECX3KwlirkEyuLaZ8i8IAaQk1Skn.LIXC7fmnDRVSwPa','18.01.012.016','2018','085337420242','BTN Puri Cutra Samawa blok D26',NULL,'Form_Registrasi',NULL,'2019-11-25 00:34:16','2019-11-25 00:34:16'),(27,8,3,2,'Bima Moch Hafidh Al Fadlurrohman','bimamh11@gmail.com',NULL,'$2y$12$Ok1mm6ioL28MrwcAIqaGieZiYjkrt87Z25oKVPqS8OnDJT33lby..','17.01.071.019','2017','082240463033','Desa Jorok',NULL,'Form_Registrasi',NULL,'2019-11-25 00:37:50','2019-11-25 00:37:50'),(29,8,6,3,'Rizki Sucitra','rizkisucitra@gmail.com',NULL,'$2y$12$GNGbFVUi9lx0gVW5aHcrJuzkmIhNMqz32FfBt59rDO3ZM/.5KT7Ye','18.01.016.016','2018','081353743100','Lopok',NULL,'Form_Registrasi',NULL,'2019-11-25 00:43:56','2019-11-25 00:43:56'),(33,11,5,2,'M.Erik Fedriansyah Agus','erik@google.co.lc',NULL,'$2y$12$WR/pbPApvqB0K8jCkkH7HehtCoorIjPpG2KDGSk/Tzl8acGo3fwLO','17.01.012.016','2015','085240696355','Dusun sering atas desa kerato kecamatan unter iwes',NULL,'Form_Registrasi',NULL,'2019-11-25 00:49:46','2019-11-25 00:49:46'),(34,11,3,3,'Brenny Prasetyo Waty','rennyprasetyo04@gmail.com',NULL,'$2y$12$bGET4/he1ElHcLIxNugTwO6FDB/3hp0JRN3Rb3eSrHZBkqm8dJBiq','17.01.071.020','2017','081263373219','Pungka',NULL,'Form_Registrasi',NULL,'2019-11-25 00:52:11','2019-11-25 00:52:11'),(35,8,4,3,'Ridwan Bagas Setiawan','ridwanbagassetiawan12@gmail.com',NULL,'$2y$12$T93ekM/gJ.arMCJ2u65RkOE5YP3Q0JIEt8DZvIwmZAmlwrj5oduqG','17.01.011.042','2017','082324359066','Perumahan Graha Satelit Gg.Satelit 4 No.B15',NULL,'Form_Registrasi',NULL,'2019-11-25 00:58:13','2019-11-25 00:58:13'),(36,8,3,3,'Akbar Algifari','akbaralgi33@gmail.com',NULL,'$2y$12$3YlGPF8N1rlLoAP39YReMuagVRmTZwnVoif/a0MjrNtOFuyTNimii','18.01.013.014','2018','081249746802','Labuhan sumbawa jalan ai mual',NULL,'Form_Registrasi',NULL,'2019-11-25 01:25:39','2019-11-25 01:25:39'),(37,10,5,3,'Rais','rais81066@gmail.com',NULL,'$2y$12$wi/DLsVtzjCDiveCuMksz.WUJpORjj7DGTaiskfJw7bz1o71RrAci','18.01.012.040','2015','081348159122','Bukit tinggi Sumbawa besar',NULL,'Form_Registrasi',NULL,'2019-11-25 01:28:31','2019-11-25 01:28:31'),(38,1,3,3,'Jati Imanulloh','jatiimanulloh05@gmail.com',NULL,'$2y$12$C/TH2GFK3trzpDnUnuca2uDxuXyMuARRPRijk/KEioA7sy3Rg6B1W','17.01.071.053','2017','081296243674','Jalan lintas kebayan gang persatuan, Kelurahan Seketeng, Kecamatan Sumbawa, Kabupaten Sumbawa, Nusa Tenggara Barat. 84313',NULL,'Form_Registrasi',NULL,'2019-11-25 03:00:03','2019-11-25 03:00:03'),(39,1,3,2,'Azzahrah Maulya Safira','azzahra.maulya@gmail.com',NULL,'$2y$12$QnV16xHNF4oC/20bW4DlA.Fb03NHfwuxYh.pdnWRY1x9WUZpgwIta','17.01.071.016','2016','082386383900','Desa Pungka',NULL,'Form_Registrasi',NULL,'2019-11-25 03:38:39','2019-11-25 03:38:39'),(44,1,3,2,'M. Zayyan Musoffa','musoffazayyan@gmail.com',NULL,'$2y$12$s4q/.ILjrzU7rDxRCUvvvO.a4xxZWwO5GTUBDVj8gbtpFmjQhXI0G','17.01.071.061','2017','087702160306','Perum Baiti jannati blok I2 J1 no. 10',NULL,'Form_Registrasi',NULL,'2019-11-27 16:06:30','2019-11-27 16:06:30'),(45,1,3,2,'Fadel Muhammad Rizky','fm936080@gmail.com',NULL,'$2y$12$pHkOhrhFLc1ZIRS3WB4xi.iGrdJKilze97jfMBNY7tlRod8jN5kuq','17.01.071.030','2017','081322119636','Jalan Lintas Kebayan',NULL,'Form_Registrasi',NULL,'2019-12-07 00:35:46','2019-12-07 00:35:46');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `aspirasi`
---
-ALTER TABLE `aspirasi`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `bidang`
---
-ALTER TABLE `bidang`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `form`
---
-ALTER TABLE `form`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `form_bidang_id_foreign` (`bidang_id`);
-
---
--- Indexes for table `form_field`
---
-ALTER TABLE `form_field`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `form_field_form_id_foreign` (`form_id`);
-
---
--- Indexes for table `form_jawaban`
---
-ALTER TABLE `form_jawaban`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `form_jawaban_form_id_foreign` (`form_id`);
-
---
--- Indexes for table `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `mahasiswa_nim_unique` (`nim`),
-  ADD KEY `mahasiswa_prodi_id_foreign` (`prodi_id`),
-  ADD KEY `mahasiswa_edit_by_foreign` (`edit_by`);
-
---
--- Indexes for table `migrations`
---
-ALTER TABLE `migrations`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `posts`
---
-ALTER TABLE `posts`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `posts_user_id_foreign` (`user_id`),
-  ADD KEY `posts_bidang_id_foreign` (`bidang_id`);
-
---
--- Indexes for table `prodi`
---
-ALTER TABLE `prodi`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `roles`
---
-ALTER TABLE `roles`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`),
-  ADD UNIQUE KEY `users_nim_unique` (`nim`),
-  ADD KEY `users_bidang_id_foreign` (`bidang_id`),
-  ADD KEY `users_prodi_id_foreign` (`prodi_id`),
-  ADD KEY `users_role_id_foreign` (`role_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `aspirasi`
---
-ALTER TABLE `aspirasi`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `bidang`
---
-ALTER TABLE `bidang`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT for table `form`
---
-ALTER TABLE `form`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
-
---
--- AUTO_INCREMENT for table `form_field`
---
-ALTER TABLE `form_field`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `form_jawaban`
---
-ALTER TABLE `form_jawaban`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT for table `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `migrations`
---
-ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `posts`
---
-ALTER TABLE `posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `prodi`
---
-ALTER TABLE `prodi`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `roles`
---
-ALTER TABLE `roles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `form`
---
-ALTER TABLE `form`
-  ADD CONSTRAINT `form_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `form_field`
---
-ALTER TABLE `form_field`
-  ADD CONSTRAINT `form_field_form_id_foreign` FOREIGN KEY (`form_id`) REFERENCES `form` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `form_jawaban`
---
-ALTER TABLE `form_jawaban`
-  ADD CONSTRAINT `form_jawaban_form_id_foreign` FOREIGN KEY (`form_id`) REFERENCES `form` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  ADD CONSTRAINT `mahasiswa_edit_by_foreign` FOREIGN KEY (`edit_by`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `mahasiswa_prodi_id_foreign` FOREIGN KEY (`prodi_id`) REFERENCES `prodi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `posts`
---
-ALTER TABLE `posts`
-  ADD CONSTRAINT `posts_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `posts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `users`
---
-ALTER TABLE `users`
-  ADD CONSTRAINT `users_bidang_id_foreign` FOREIGN KEY (`bidang_id`) REFERENCES `bidang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `users_prodi_id_foreign` FOREIGN KEY (`prodi_id`) REFERENCES `prodi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `users_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-COMMIT;
-
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-12-16 20:05:39
